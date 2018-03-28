@@ -31,4 +31,3 @@ The workshop is taught using R.
 | [FIXME](FIXME) | FIXME |
 | [FIXME](FIXME) | FIXME |
 | [FIXME](FIXME) | FIXME |
-
