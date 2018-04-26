@@ -172,6 +172,8 @@ Once up and running - you'll have full access to RStudio right from your browser
 
 ![](/fig/docker.png)
 
+*Please be aware that the `R` package `rasterVis` is not included in the `rocker/geospatial` Docker image. If your instructor teaches with this package, this will be the one `R` package you will need to install yourself. All other `R` packages will already be installed for you.*
+
 > ## Downloading and Installing Docker Community Edition
 >
 > To get started with Docker, download the [Docker Community Edition](https://www.docker.com/community-edition) from [Docker's store](https://store.docker.com/search?type=edition&offering=community). Community editions are available for [Windows](https://store.docker.com/editions/community/docker-ce-desktop-windows), [macOS](https://store.docker.com/editions/community/docker-ce-desktop-mac), and Linux operating systems including [Debian](https://store.docker.com/editions/community/docker-ce-server-debian), [Fedora](https://store.docker.com/editions/community/docker-ce-server-fedora), and [Ubuntu](https://store.docker.com/editions/community/docker-ce-server-ubuntu).
