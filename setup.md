@@ -190,7 +190,9 @@ Option B involves downloading an Docker image that contains an installation of `
 >~~~
 >{: .bash}
 >
-> Once the pull command is executed, the image needs to be run to become accessible. When `docker run` is used, you can specify a folder on your computer to become accessible inside your RStudio Server instance. The following `docker run` command exposes Jane's `GitHub` directory to RStudio Server:
+> Once the pull command is executed, the image needs to be run to become accessible as a container. In the following example, the image is named `rocker/geospatial` and the container is named `gis`. The [image](https://docs.docker.com/glossary/?term=image) contains the software you've downloaded, and the [container](https://docs.docker.com/glossary/?term=container) is the run-time instance of that image. New Docker users should need only one named container per image.
+>
+> When `docker run` is used, you can specify a folder on your computer to become accessible inside your RStudio Server instance. The following `docker run` command exposes Jane's `GitHub` directory to RStudio Server:
 >
 >~~~
 >$ docker run -d -P --name gis /Users/jane/GitHub:/home/rstudio/GitHub rocker/geospatial
@@ -199,9 +201,7 @@ Option B involves downloading an Docker image that contains an installation of `
 >
 > When she opens her RStudio instance below, she will see a `GitHub` folder in her file table in the lower righthand corner of the screen. Windows and Linux users will have to adapt the file path above to follow the standards of their operating systems. More details are available on [rocker's Wiki](https://github.com/rocker-org/rocker/wiki/Sharing-files-with-host-machine).
 >
-> Each Docker image can be run via multiple containers. In this example, the image is named `rocker/geospatial` and the container is named `gis`. For example, Jane could also create a separate container based off the `rocker/geospatial` image named `geospatial`. New Docker users should need only one named container based on an image.
->
-> The last step before launching your browser is to identify the port that your Docker container is running in:
+> The last step before launching your container in a browser is to identify the port that your Docker container is running in:
 >
 >~~~
 >$ docker port gis
@@ -211,7 +211,7 @@ Option B involves downloading an Docker image that contains an installation of `
 > An output, for example, of `8787/tcp -> 0.0.0.0:32768` would indicate that you should point your browser to `http://localhost:32768/`. If prompted, enter `rstudio` for both the username and the password.
 >
 > #### Stopping a Container
-> When you are done with a Docker session, make sure all of your files are saved locally on your computer **before closing Docker**. Once you have ensured all of your files are available (they should be saved at the file path designated in `docker run` above), you can stop your Docker image in the terminal:
+> When you are done with a Docker session, make sure all of your files are saved locally on your computer **before closing your browser and Docker**. Once you have ensured all of your files are available (they should be saved at the file path designated in `docker run` above), you can stop your Docker container in the terminal:
 >
 >~~~
 >$ docker stop gis
@@ -219,14 +219,14 @@ Option B involves downloading an Docker image that contains an installation of `
 >{: .bash}
 >
 > #### Re-starting a Container
-> Once an image has been downloaded, named, and created, you cannot create an image with the same name again using `docker run`. Instead, you can restart it:
+> Once a container has been named and created, you cannot create a container with the same name again using `docker run`. Instead, you can restart it:
 >
 >~~~
 >$ docker start gis
 >~~~
 >{: .bash}
 >
-> If you cannot remember the name of the image you created, you can use the following command to print a list of all named containers:
+> If you cannot remember the name of the container you created, you can use the following command to print a list of all named containers:
 >
 >~~~
 >$ docker ps -a
@@ -235,7 +235,7 @@ Option B involves downloading an Docker image that contains an installation of `
 >
 {: .solution}
 
-> ## Managing Docker Resources
+> ## Managing Docker Containers and Images
 > To obtain a list of all of your current Docker containers:
 >
 >~~~
