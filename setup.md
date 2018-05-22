@@ -149,17 +149,23 @@ Linux users will have to install UDUNITS separately. Like the geospatial librari
 
 The following `R` packages are used in the various geospatial lessons.
 
+* [`devtools`](https://cran.r-project.org/package=devtools)
 * [`dplyr`](https://cran.r-project.org/package=dplyr)
-* [`ggplot2`](https://cran.r-project.org/package=ggplo2)
-* [`sf`](https://cran.r-project.org/package=sf)
 * [`raster`](https://cran.r-project.org/package=raster)
 * [`rgdal`](https://cran.r-project.org/package=rgdal)
 * [`rasterVis`](https://cran.r-project.org/package=rasterVis)
+* [`sf`](https://cran.r-project.org/package=sf)
 
 To install them from the `R` prompt, type:
 
 ```r
-install.packages(c("dplyr", "ggplot2", "sf", "raster", "rgdal", "rasterVis"))
+install.packages(c("devtools", "dplyr", "raster", "rgdal", "rasterVis", "sf"))
+```
+
+Additionally, you will need to install the *development* version of [`ggplot2`](https://github.com/tidyverse/ggplot2):
+
+```r
+devtools::install_github("tidyverse/ggplot2")
 ```
 
 ## Option B: Docker
@@ -172,7 +178,7 @@ Once up and running - you'll have full access to RStudio right from your browser
 
 ![](/fig/docker.png)
 
-*Please be aware that the `R` package `rasterVis` is not included in the `rocker/geospatial` Docker image. If your instructor teaches with this package, this will be the one `R` package you will need to install yourself. All other `R` packages will already be installed for you.*
+*Please be aware that the `R` package `rasterVis` is not included in the `rocker/geospatial` Docker image. If your instructor teaches with this package, this will be an `R` package you will need to install yourself. You will also have to install the development version of `ggplot2` until `ggplot2` is released in June 2018 and the updated version is added to `rocker/geospatial`. All other `R` packages will already be installed for you.*
 
 > ## Downloading and Installing Docker Community Edition
 >
