@@ -72,7 +72,7 @@ The installation of the geospatial libraries GDAL, GEOS, and PROJ.4 varies signi
 >$ brew install gdal2 --with-armadillo --with-complete --with-libkml --with-unsupported
 >$ brew link --force gdal2
 >~~~
->{: .bash}
+>{: .language-bash}
 >
 {: .solution}
 
@@ -87,21 +87,21 @@ The installation of the geospatial libraries GDAL, GEOS, and PROJ.4 varies signi
 >$ sudo apt-get update
 >$ sudo apt-get install libgdal-dev libgeos-dev libproj-dev
 >~~~
->{: .bash}
+>{: .language-bash}
 >
 > For **Fedora**:
 >
 >~~~
 >$ sudo dnf install gdal-devel proj-devel proj-epsg proj-nad geos-devel
 >~~~
->{: .bash}
+>{: .language-bash}
 >
 > For **Arch**:
 >
 >~~~
 >$ pacman -S gdal proj geos
 >~~~
->{: .bash}
+>{: .language-bash}
 >
 > For **Debian**: The [rocker geospatial](https://github.com/rocker-org/geospatial) Dockerfiles may be helpful. Ubuntu Dockerfiles are found [here](https://github.com/r-spatial/sf/tree/master/inst/docker).
 >
@@ -120,28 +120,28 @@ Linux users will have to install UDUNITS separately. Like the geospatial librari
 >~~~
 >$ sudo apt-get install libudunits2-dev
 >~~~
->{: .bash}
+>{: .language-bash}
 >
 > For **Fedora**:
 >
 >~~~
 >$ sudo dnf install udunits2-devel
 >~~~
->{: .bash}
+>{: .language-bash}
 >
 > For **Arch**:
 >
 >~~~
 >$ pacaur/yaourt/whatever -S udunits
 >~~~
->{: .bash}
+>{: .language-bash}
 >
 > For **Debian**:
 >
 >~~~
 >$ sudo apt-get install -y libudunits2-dev
 >~~~
->{: .bash}
+>{: .language-bash}
 >
 {: .solution}
 
@@ -149,23 +149,23 @@ Linux users will have to install UDUNITS separately. Like the geospatial librari
 
 The following `R` packages are used in the various geospatial lessons.
 
-* [`devtools`](https://cran.r-project.org/package=devtools)
 * [`dplyr`](https://cran.r-project.org/package=dplyr)
 * [`raster`](https://cran.r-project.org/package=raster)
 * [`rgdal`](https://cran.r-project.org/package=rgdal)
 * [`rasterVis`](https://cran.r-project.org/package=rasterVis)
+* [`remotes`](https://cran.r-project.org/package=remotes)
 * [`sf`](https://cran.r-project.org/package=sf)
 
 To install them from the `R` prompt, type:
 
 ```r
-install.packages(c("devtools", "dplyr", "raster", "rgdal", "rasterVis", "sf"))
+install.packages(c("dplyr", "raster", "rgdal", "rasterVis", "remotes", "sf"))
 ```
 
 Additionally, you will need to install the *development* version of [`ggplot2`](https://github.com/tidyverse/ggplot2):
 
 ```r
-devtools::install_github("tidyverse/ggplot2")
+remotes::install_github("tidyverse/ggplot2")
 ```
 
 ## Option B: Docker
@@ -200,7 +200,7 @@ Once up and running - you'll have full access to RStudio right from your browser
 >~~~
 >$ docker pull rocker/geospatial
 >~~~
->{: .bash}
+>{: .language-bash}
 >
 > Once the pull command is executed, the image needs to be run to become accessible as a container. In the following example, the image is named `rocker/geospatial` and the container is named `gis`. The [image](https://docs.docker.com/glossary/?term=image) contains the software you've downloaded, and the [container](https://docs.docker.com/glossary/?term=container) is the run-time instance of that image. New Docker users should need only one named container per image.
 >
@@ -209,7 +209,7 @@ Once up and running - you'll have full access to RStudio right from your browser
 >~~~
 >$ docker run -d -P --name gis /Users/jane/GitHub:/home/rstudio/GitHub rocker/geospatial
 >~~~
->{: .bash}
+>{: .language-bash}
 >
 > When she opens her RStudio instance below, she will see a `GitHub` folder in her file tab in the lower righthand corner of the screen. Windows and Linux users will have to adapt the file path above to follow the standards of their operating systems. More details are available on [rocker's Wiki](https://github.com/rocker-org/rocker/wiki/Sharing-files-with-host-machine).
 >
@@ -218,7 +218,7 @@ Once up and running - you'll have full access to RStudio right from your browser
 >~~~
 >$ docker port gis
 >~~~
->{: .bash}
+>{: .language-bash}
 >
 > An output, for example, of `8787/tcp -> 0.0.0.0:32768` would indicate that you should point your browser to `http://localhost:32768/`. If prompted, enter `rstudio` for both the username and the password.
 >
@@ -228,7 +228,7 @@ Once up and running - you'll have full access to RStudio right from your browser
 >~~~
 >$ docker stop gis
 >~~~
->{: .bash}
+>{: .language-bash}
 >
 > #### Re-starting a Container
 > Once a container has been named and created, you cannot create a container with the same name again using `docker run`. Instead, you can restart it:
@@ -236,14 +236,14 @@ Once up and running - you'll have full access to RStudio right from your browser
 >~~~
 >$ docker start gis
 >~~~
->{: .bash}
+>{: .language-bash}
 >
 > If you cannot remember the name of the container you created, you can use the following command to print a list of all named containers:
 >
 >~~~
 >$ docker ps -a
 >~~~
->{: .bash}
+>{: .language-bash}
 >
 > If you are returning to a session after stopping Docker itself, make sure Docker is running again before re-starting your container!
 >
@@ -283,27 +283,27 @@ Once up and running - you'll have full access to RStudio right from your browser
 >~~~
 >$ docker ps -a
 >~~~
->{: .bash}
+>{: .language-bash}
 >
 > To list all of the currently downloaded Docker images:
 >
 >~~~
 >$ docker images -a
 >~~~
->{: .bash}
+>{: .language-bash}
 >
 > These images can take up system resources, and if you'd like to remove them, you can use the `docker prune` command. To remove any Docker resources not affiliated with a container listed under `docker ps -a`:
 >
 >~~~
 >$ docker system prune
 >~~~
->{: .bash}
+>{: .language-bash}
 >
 > To remove **all** Docker resources, including currently named containers:
 >
 >~~~
 >$ docker system prune -a
 >~~~
->{: .bash}
+>{: .language-bash}
 >
 {: .solution}
