@@ -28,6 +28,6 @@ The workshop is taught using R.
 
 | Lesson    | Overview |
 | ------- | ---------- |
-| [FIXME](FIXME) | FIXME |
-| [FIXME](FIXME) | FIXME |
-| [FIXME](FIXME) | FIXME |
+| [Geospatial Project Organization and Management](http://www.datacarpentry.org/organization-geospatial/) | Understand data structures and common storage and transfer formats for spatial data. |
+| [Introduction to R for Geospatial Data](http://www.datacarpentry.org/r-intro-geospatial) | Import data into R, calculate summary statistics, and create publication-quality graphics. |
+| [R for Raster and Vector Data](http://www.datacarpentry.org/r-raster-vector-geospatial) | Open, work with, and plot vector and raster-format spatial data in R. |
