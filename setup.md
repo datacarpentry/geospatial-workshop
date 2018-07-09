@@ -150,6 +150,7 @@ Linux users will have to install UDUNITS separately. Like the geospatial librari
 The following `R` packages are used in the various geospatial lessons.
 
 * [`dplyr`](https://cran.r-project.org/package=dplyr)
+* [`ggplot2`](https://cran.r-project.org/package=ggplot2)
 * [`raster`](https://cran.r-project.org/package=raster)
 * [`rgdal`](https://cran.r-project.org/package=rgdal)
 * [`rasterVis`](https://cran.r-project.org/package=rasterVis)
@@ -159,13 +160,7 @@ The following `R` packages are used in the various geospatial lessons.
 To install them from the `R` prompt, type:
 
 ```r
-install.packages(c("dplyr", "raster", "rgdal", "rasterVis", "remotes", "sf"))
-```
-
-Additionally, you will need to install the *development* version of [`ggplot2`](https://github.com/tidyverse/ggplot2):
-
-```r
-remotes::install_github("tidyverse/ggplot2")
+install.packages(c("dplyr", "ggplot2", "raster", "rgdal", "rasterVis", "sf"))
 ```
 
 ## Option B: Docker
