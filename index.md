@@ -41,8 +41,8 @@ Data Carpentry's aim is to teach researchers basic concepts, skills, and tools f
 > | ---- | ------| ---- | 
 > | Site layout shapefiles | NEON-DS-Site-Layout-Files.zip | A set of shapefiles for the NEON's Harvard Forest field site and US and (some) state boundary layers. | 
 > | Meteorological data |  NEON-DS-Met-Time-Series.zip | Precipitation, temperature and other variables collected from a flux tower at the NEON Harvard Forest site
-> | Airborne remote sensing data | NEON-DS-Airborne-RemoteSensing.zip | LiDAR data including a canopy height model, digital elevation model and digital surface model for NEON's Harvard Forest and San Joaquin Experimental Range field sites. 
-> | Landstat NDVI raster data | NEON-DS-Landsat-NDVI.zip |  2011 NDVI data product provided by USGS cropped to NEON's Harvard Forest and San Joaquin Experimental Range field sites. | 
+> | Airborne remote sensing data | NEON-DS-Airborne-RemoteSensing.zip | LiDAR data collected by the NEON Airborne Observation Platform (AOP) and processed at NEON including a canopy height model, digital elevation model and digital surface model for NEON's Harvard Forest and San Joaquin Experimental Range field sites. | 
+> | Landstat 7 NDVI raster data | NEON-DS-Landsat-NDVI.zip | 2011 NDVI data product derived from Landsat 7 and processed by USGS cropped to NEON's Harvard Forest and San Joaquin Experimental Range field sites | 
 > 
 > [More information on this dataset](data)
 > 
