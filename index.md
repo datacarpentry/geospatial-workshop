@@ -3,8 +3,7 @@ layout: lesson
 root: .
 ---
 
-Data Carpentry's aim is to teach researchers basic concepts, skills, and tools for working with data so that they can get more done in less time, and with less pain. This workshop uses a FIXME dataset and teaches FIXME.
-
+Data Carpentry's aim is to teach researchers basic concepts, skills, and tools for working with data so that they can get more done in less time, and with less pain. 
 
 > ## Getting Started
 >
@@ -15,13 +14,17 @@ Data Carpentry's aim is to teach researchers basic concepts, skills, and tools f
 > get access to the required software and data for this workshop.
 >
 > Please note that workshop materials for working with Geospatial data in R are under development and will become available
-> in June 2018.
+> in July 2018.
 {: .prereq}
 
 > ## Data
-> Data for this lesson comes from the National Ecological Observatory Network. These data files represent teaching version of the data, 
-> with sufficient complexity to teach many aspects of  data analysis and management, but with many complexities removed to allow students
-> to focus on the core ideas and skills being taught.  
+> The data and lessons in this workshop were originally developed through a hackathon supported by the 
+> [National Ecological Observatory Network (NEON)](https://www.neonscience.org/) - an NSF funded observatory in Boulder, Colorado. 
+> NEON is collecting data for 30 years to help scientists understand
+> how our aquatic and terrestrial ecosystems are changing. The data used in these lessons cover two NEON field sites:
+> * Harvard Forest (HARV) - Massachusetts, USA
+> * San Joachin Experimental Range (SJER) - California, USA
+> 
 > 
 > There are four data sets included, all of which are available 
 > [on Figshare](https://figshare.com/articles/Spatio_temporal_Series_Teaching_Data_Subsets/2009586)
@@ -30,6 +33,9 @@ Data Carpentry's aim is to teach researchers basic concepts, skills, and tools f
 > Clicking the download link will automatically download all of the files to your default download directory as a single compressed
 > (`.zip`) file. To expand this file, double click the folder icon in your file navigator application (for Macs, this is the Finder 
 > application).
+> 
+> These data files represent teaching version of the data, with sufficient complexity to teach many aspects of  data analysis and 
+> management, but with many complexities removed to allow students to focus on the core ideas and skills being taught.  
 > 
 > | Dataset | File name | Description |
 > | ---- | ------| ---- | 
