@@ -11,7 +11,7 @@ Data Carpentry's aim is to teach researchers basic concepts, skills, and tools f
 > This lesson assumes no prior experience with the tools covered in the workshop.
 > Participants should bring their laptops and plan to participate actively.
 >
-> To get started, follow the directions in the [Setup](setup/) tab to
+> To get started, follow the directions in the [Setup](setup.html) tab to
 > get access to the required software and data for this workshop.
 >
 > Please note that workshop materials for working with Geospatial data in R are under development and will become available
