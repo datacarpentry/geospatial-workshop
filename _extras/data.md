@@ -12,9 +12,7 @@ Available on FigShare:
 **CITATION:** Data Skills Teaching Data Subsets, NEON; Wasser, Leah; Jones, Megan A. (2016): 
 NEON Spatio-temporal Teaching Data Subset. figshare. Fileset. https://doi.org/10.6084/m9.figshare.2009586.v10 
 
-The data and lessons in this workshop were originally developed through a hackathon supported by the 
-[National Ecological Observatory Network (NEON)](https://www.neonscience.org/) - an NSF funded observatory in Boulder, Colorado. 
-NEON is collecting data for 30 years to help scientists understand
+The data and lessons in this workshop were originally developed through a hackathon funded by the [National Ecological Observatory Network (NEON)](https://www.neonscience.org/) - an NSF funded observatory in Boulder, Colorado - in collaboration with Data Carpentry, SESYNC and CYVERSE. NEON is collecting data for 30 years to help scientists understand
 how our aquatic and terrestrial ecosystems are changing. The data used in these lessons cover two NEON field sites:
 * Harvard Forest (HARV) - Massachusetts, USA - [fieldsite description](https://www.neonscience.org/field-sites/field-sites-map/HARV)
 * San Joachin Experimental Range (SJER) - California, USA - [fieldsite description](https://www.neonscience.org/field-sites/field-sites-map/SJER)
@@ -53,14 +51,15 @@ This data was collected at the [National Ecological Observatory Network's](https
 [Harvard Forest](https://www.neonscience.org/field-sites/field-sites-map/HARV) and 
 [San Joaquin Experimental Range](https://www.neonscience.org/field-sites/field-sites-map/SJER) field sites. 
 
-Airborne remote sensing flight surveys are conducted by the NEON project to collect quantitative information on land cover
-and changes to ecological structure and chemistry, including the presence and effects of invasive species across landscapes 100-300km2
-surrounding NEON sites. Data are collected during peak greenness at each field site and include the following: 
+Data are collected during peak greenness at each field site and are processed to provide useful data products to the community. The following NEON data products are used in these lessons:
+
+Data Created from Discrete Return (point clouds) Lidar Data:
 
 * DSM (Digital Surface Model; full mosaic)
 * DTM (Digital Terrain Model; full mosaic)
-* CHM (Canopy Height Model; full mosaic)
-* RGB imagery (Harvard Forest site only)
+* CHM (Canopy Height Model; full mosaic; Harvard Forest site only)
+and
+* RGB imagery (Harvard Forest site only) derived from the RGB Camera
 
 Additional information about airborne remote sensing data, including other data types for these and other sites can
 be found on [NEON’s Airborne Data](https://www.neonscience.org/data-collection/airborne-remote-sensing) page.
