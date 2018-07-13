@@ -6,9 +6,16 @@ root: .
 Data Carpentry's aim is to teach researchers basic concepts, skills, and tools for working with data so that they can get more done in less time, and with less pain. 
 
 > ## Getting Started
->
-> This lesson assumes no prior experience with the tools covered in the workshop.
-> Participants should bring their laptops and plan to participate actively.
+> Data Carpentry’s teaching is hands-on, so participants are encouraged to use 
+> their own computers to ensure the proper setup of tools for an efficient 
+> workflow. To most effectively use these materials, please make sure to download 
+> the data and install everything before working through this lesson. 
+> 
+> This workshop assumes no prior experience with the tools covered in the workshop. However, learners with prior
+> experience working with geospatial data may be able to skip the 
+> [Geospatial Project Organization and Management](http://www.datacarpentry.org/organization-geospatial/) lesson. 
+> Similarly, learners who have prior experience with the `R` programming language may wish to skip the 
+> [Introduction to R for Geospatial Data](http://www.datacarpentry.org/r-intro-geospatial/) lesson.
 >
 > To get started, follow the directions in the [Setup](setup.html) tab to
 > get access to the required software and data for this workshop.
