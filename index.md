@@ -54,9 +54,6 @@ Data Carpentry's aim is to teach researchers basic concepts, skills, and tools f
 > 
 {: .prereq} 
 
-The workshop is taught using R.
-
-
 # Workshop Overview
 
 | Lesson    | Overview |
