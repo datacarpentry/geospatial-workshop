@@ -15,7 +15,7 @@ NEON Spatio-temporal Teaching Data Subset. figshare. Fileset. https://doi.org/10
 The data and lessons in this workshop were originally developed through a hackathon funded by the [National Ecological Observatory Network (NEON)](https://www.neonscience.org/) - an NSF funded observatory in Boulder, Colorado - in collaboration with Data Carpentry, SESYNC and CYVERSE. NEON is collecting data for 30 years to help scientists understand
 how our aquatic and terrestrial ecosystems are changing. The data used in these lessons cover two NEON field sites:
 * Harvard Forest (HARV) - Massachusetts, USA - [fieldsite description](https://www.neonscience.org/field-sites/field-sites-map/HARV)
-* San Joachin Experimental Range (SJER) - California, USA - [fieldsite description](https://www.neonscience.org/field-sites/field-sites-map/SJER)
+* San Joaquin Experimental Range (SJER) - California, USA - [fieldsite description](https://www.neonscience.org/field-sites/field-sites-map/SJER)
  
 You can download all of the data used in this workshop by clicking 
 [this download link](https://ndownloader.figshare.com/articles/2009586/versions/10). 
