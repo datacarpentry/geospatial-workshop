@@ -93,7 +93,7 @@ The installation of the geospatial libraries GDAL, GEOS, and PROJ.4 varies signi
 
 > ## Linux
 >
-> Steps for installing the geospatial will vary based on which form of Linux you are using. These instructions are adapted from the [`sf` package's `README`](https://github.com/r-spatial/sf).
+> Steps for installing the geospatial libraries will vary based on which form of Linux you are using. These instructions are adapted from the [`sf` package's `README`](https://github.com/r-spatial/sf).
 >
 > For **Ubuntu**:
 >
@@ -172,11 +172,11 @@ The following `R` packages are used in the various geospatial lessons.
 * [`remotes`](https://cran.r-project.org/package=remotes)
 * [`sf`](https://cran.r-project.org/package=sf)
 
-To install these packages in RStudio, do the following:
+To install these packages in RStudio, do the following:  
 1\. Open RStudio by double-clicking the RStudio application icon. You should see 
 something like this:
 
-![RStudio layout](../fig/01-rstudio.png)
+![RStudio layout](/fig/01-rstudio.png)
 
 
 2\. Type the following into the console and hit enter.
@@ -209,6 +209,8 @@ The downloaded binary packages are in
 ~~~
 {: .output}
 
+You are now ready for the workshop!  
+
 ## Option B: Docker
 
 [Docker](https://www.docker.com) provides developers with a means for creating interactive [containers](https://docs.docker.com/glossary/?term=container) that contain pre-installed software. A selection of pre-installed software in Docker is called an [image](https://docs.docker.com/glossary/?term=image). An image can be downloaded and used to create a local container, allowing end-users to get software up and running quickly. This is particularly useful when a local installation of the software could be complex and time consuming. For `R` users, a Docker image can be used to create a virtual installation of `R` and RStudio that can be run through your web browser.
@@ -219,7 +221,7 @@ Once up and running - you'll have full access to RStudio right from your browser
 
 ![](/fig/docker.png)
 
-*Please be aware that the `R` package `rasterVis` is not included in the `rocker/geospatial` Docker image. If your instructor teaches with this package, this will be an `R` package you will need to install yourself. You will also have to install the development version of `ggplot2` until `ggplot2` is released in June 2018 and the updated version is added to `rocker/geospatial`. All other `R` packages will already be installed for you.*
+Please be aware that the `R` package `rasterVis` is not included in the `rocker/geospatial` Docker image. If your instructor teaches with this package, this will be an `R` package you will need to install yourself. All other `R` packages will already be installed for you.
 
 > ## Downloading and Installing Docker Community Edition
 >
