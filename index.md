@@ -18,13 +18,12 @@ Data Carpentry's aim is to teach researchers basic concepts, skills, and tools f
 {: .prereq}
 
 > ## Data
-> The data and lessons in this workshop were originally developed through a hackathon supported by the 
-> [National Ecological Observatory Network (NEON)](https://www.neonscience.org/) - an NSF funded observatory in Boulder, Colorado. 
-> NEON is collecting data for 30 years to help scientists understand
-> how our aquatic and terrestrial ecosystems are changing. The data used in these lessons cover two NEON field sites:
-> * Harvard Forest (HARV) - Massachusetts, USA
-> * San Joachin Experimental Range (SJER) - California, USA
-> 
+> The data and lessons in this workshop were originally developed through a hackathon funded by the 
+> [National Ecological Observatory Network (NEON)](https://www.neonscience.org/) - an NSF funded observatory in Boulder, Colorado - in 
+> collaboration with Data Carpentry, SESYNC and CYVERSE. NEON is collecting data for 30 years to help scientists understand
+> how our aquatic and terrestrial ecosystems are changing. The data used in these lessons cover two NEON field sites:  
+> * Harvard Forest (HARV) - Massachusetts, USA - [fieldsite description](https://www.neonscience.org/field-sites/field-sites-map/HARV)
+> * San Joaquin Experimental Range (SJER) - California, USA - [fieldsite description](https://www.neonscience.org/field-sites/field-sites-map/SJER)
 > 
 > There are four data sets included, all of which are available 
 > [on Figshare](https://figshare.com/articles/Spatio_temporal_Series_Teaching_Data_Subsets/2009586)
