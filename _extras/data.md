@@ -33,20 +33,20 @@ management, but with many complexities removed to allow students to focus on the
  | Airborne remote sensing data | NEON-DS-Airborne-RemoteSensing.zip | LiDAR data collected by the NEON Airborne Observation Platform (AOP) and processed at NEON including a canopy height model, digital elevation model and digital surface model for NEON's Harvard Forest and San Joaquin Experimental Range field sites. | 
  | Landstat 7 NDVI raster data | NEON-DS-Landsat-NDVI.zip | 2011 NDVI data product derived from Landsat 7 and processed by USGS cropped to NEON's Harvard Forest and San Joaquin Experimental Range field sites | 
 
-## About the Site Layout Shapefiles
+### About the Site Layout Shapefiles
 These vector data provide information on the site characterization and infrastructure at the 
 [National Ecological Observatory Network's](https://www.neonscience.org/)
 [Harvard Forest](https://www.neonscience.org/field-sites/field-sites-map/HARV) field site. 
 The Harvard Forest shapefiles are from the [Harvard Forest GIS & Map](http://harvardforest.fas.harvard.edu/gis-maps/) archives. 
 US Country and State Boundary layers are from the [US Census Bureau](https://www.census.gov/geo/maps-data/data/tiger-cart-boundary.html).
 
-## About the Meteorological Data
+### About the Meteorological Data
 The data used in this lesson were collected at the [National Ecological Observatory Network's](https://www.neonscience.org/) 
 [Harvard Forest](https://www.neonscience.org/field-sites/field-sites-map/HARV). These data are proxy data for what will be available 
 for 30 years on the [NEON data portal](http://data.neonscience.org/home) for the Harvard Forest and other field sites located across
 the United States.
 
-## About the Airborne Remote Sensing Data
+### About the Airborne Remote Sensing Data
 This data was collected at the [National Ecological Observatory Network's](https://www.neonscience.org/) 
 [Harvard Forest](https://www.neonscience.org/field-sites/field-sites-map/HARV) and 
 [San Joaquin Experimental Range](https://www.neonscience.org/field-sites/field-sites-map/SJER) field sites. 
@@ -64,7 +64,7 @@ and
 Additional information about airborne remote sensing data, including other data types for these and other sites can
 be found on [NEON’s Airborne Data](https://www.neonscience.org/data-collection/airborne-remote-sensing) page.
 
-## About the Landstat 7 NDVI Raster Data
+### About the Landstat 7 NDVI Raster Data
 The imagery data used to create this raster teaching data subset were collected over the 
 [National Ecological Observatory Network's](https://www.neonscience.org/) 
 [Harvard Forest](https://www.neonscience.org/field-sites/field-sites-map/HARV) 
