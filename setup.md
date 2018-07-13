@@ -70,7 +70,14 @@ The installation of the geospatial libraries GDAL, GEOS, and PROJ.4 varies signi
 > ## macOS
 >
 > For participants who do not already have [homebrew](https://brew.sh) installed, and who may be less comfortable with the command line, the easiest was to obtain the geospatial libraries is to install the latest version of [Kyng Chaos's pre-built package](http://www.kyngchaos.com/software/frameworks) for GDAL Complete. Be aware that several other libraries are also installed, including the UnixImageIO, SQLite3, and `NumPy`.
->
+> 
+> After downloading the package in the link above, you will need to double-click the 
+> cardbord box icon to complete the installation. Depending on your security settings,
+> you may get an error message about "unidentified developers". You can enable the 
+> installation by following [these instructions](https://kb.wisc.edu/page.php?id=25443)
+> for installing programs from
+> unidentified developers. 
+> 
 > Alternatively, participants who are comfortable with the command line can install the geospatial libraries individually using [homebrew](https://brew.sh):
 >
 >~~~
@@ -165,11 +172,42 @@ The following `R` packages are used in the various geospatial lessons.
 * [`remotes`](https://cran.r-project.org/package=remotes)
 * [`sf`](https://cran.r-project.org/package=sf)
 
-To install them from the `R` prompt, type:
+To install these packages in RStudio, do the following:
+1\. Open RStudio by double-clicking the RStudio application icon. You should see 
+something like this:
 
-```r
+![RStudio layout](../fig/01-rstudio.png)
+
+
+2\. Type the following into the console and hit enter.
+
+~~~
 install.packages(c("dplyr", "ggplot2", "raster", "rgdal", "rasterVis", "sf"))
-```
+~~~
+{: .language-r}
+
+You should see a status message starting with:
+
+~~~
+trying URL 'https://cran.rstudio.com/bin/macosx/el-capitan/contrib/3.5/dplyr_0.7.6.tgz'
+Content type 'application/x-gzip' length 5686536 bytes (5.4 MB)
+==================================================
+downloaded 5.4 MB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/el-capitan/contrib/3.5/ggplot2_3.0.0.tgz'
+Content type 'application/x-gzip' length 3577658 bytes (3.4 MB)
+==================================================
+downloaded 3.4 MB
+~~~
+{: .output}
+
+When the installation is complete, you will see a status message like: 
+
+~~~
+The downloaded binary packages are in
+/var/folders/7g/r8_n81y534z0vy5hxc6dx1t00000gn/T//RtmpJECKXM/downloaded_packages
+~~~
+{: .output}
 
 ## Option B: Docker
 
