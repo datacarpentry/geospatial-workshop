@@ -5,9 +5,10 @@ title: Setup
 
 # Overview
 
-This workshop is designed to be run on your local machine. To do this, you will need to install all of the software used in the workshop and obtain a copy of the dataset. It is also possible to use a Docker image instead of installing the software locally. The Docker image we use allows participants to run a virtual installation of `R`, RStudio, and the necessary dependencies through their browser with streamlined installation process. Instructions for both of these options are below.
+This workshop is designed to be run on your local machine. First, you will need to download the data we use in the workshop. Then, you need to set up your machine to analyze and process geospatial data. We provide below instructions to either install all components manually (option A), or to use a Docker image that provides all the software and dependencies needed (option B).
 
 ## Data
+
 You can download all of the data used in this workshop by clicking 
 [this download link](https://ndownloader.figshare.com/articles/2009586/versions/10). 
 Clicking the download link will automatically download all of the files to your default download directory as a single compressed
@@ -29,7 +30,7 @@ For a full description of the data used in this workshop see the [data page](dat
 | [RStudio](https://www.rstudio.com) | [Link](https://www.rstudio.com/products/rstudio/download/#download) | | Linux, MacOS, Windows | GUI for R |
 | [UDUNITS](https://www.unidata.ucar.edu/software/udunits/) | [Link](https://www.unidata.ucar.edu/downloads/udunits/index.jsp) | [Link](https://www.unidata.ucar.edu/software/udunits/#documentation) | Linux, MacOS, Windows | Unit conversions |
 
-### QuickStart Software Installation Instructions
+We provide below quick instructions for installing the various software needed for this workshop. At points, they assume familiarity with the command line and with installation in general. As there are different operating systems and many different versions of operating systems and environments, these may not work on your computer. If an installation doesn't work for you, please refer to the installation instructions for that software, listed in the table above.
 
 These are the QuickStart installation instructions. At points, they assume familiarity with the command line and with installation in general. As there are different operating systems and many different versions of operating systems and environments, these may not work on your computer. If an installation doesn't work for you, please refer to the installation instructions for that software, listed in the table above.
 
