@@ -32,31 +32,6 @@ For a full description of the data used in this workshop see the [data page](dat
 
 We provide below quick instructions for installing the various software needed for this workshop. At points, they assume familiarity with the command line and with installation in general. As there are different operating systems and many different versions of operating systems and environments, these may not work on your computer. If an installation doesn't work for you, please refer to the installation instructions for that software, listed in the table above.
 
-These are the QuickStart installation instructions. At points, they assume familiarity with the command line and with installation in general. As there are different operating systems and many different versions of operating systems and environments, these may not work on your computer. If an installation doesn't work for you, please refer to the installation instructions for that software, listed in the table above.
-
-### R
-Participants who do not already have `R` installed should download and install it.
-
-> ## Windows
->
->To install `R`, Windows users should select "Download R for Windows" from RStudio and CRAN's [cloud download page](https://cloud.r-project.org), which will automatically detect a CRAN mirror for you to use. Select the `base` subdirectory after choosing the Windows download page. A `.exe` executable file containing the necessary components of base R can be downloaded by clicking on "Download R 3.x.x for Windows".
->
-{: .solution}
-
-> ## macOS
->
->To install `R`, macOS users should select "Download R for (Mac) OS X" from RStudio and CRAN's [cloud download page](https://cloud.r-project.org), which will automatically detect a CRAN mirror for you to use. A `.pkg` file containing the necessary components of base R can be downloaded by clicking on the first available link (this will be the most recent), which will read `R-3.x.x.pkg`.
->
-{: .solution}
-
-> ## Linux
->
->To install `R`, Linux users should select "Download R for Linux" from RStudio and CRAN's [cloud download page](https://cloud.r-project.org), which will automatically detect a CRAN mirror for you to use. Instructions for a number of different Linux operating systems are available.
->
-{: .solution}
-
-### RStudio
-RStudio is an GUI for using R that is available for Windows, macOS, and various Linux operating systems. It can be downloaded [here](https://www.rstudio.com/products/rstudio/download/). You will need the **free** Desktop version for your computer.
 
 ### GDAL, GEOS, and PROJ.4
 
@@ -161,6 +136,33 @@ Linux users will have to install UDUNITS separately. Like the geospatial librari
 >
 {: .solution}
 
+
+### R
+
+Participants who do not already have `R` installed should download and install it.
+
+> ## Windows
+>
+>To install `R`, Windows users should select "Download R for Windows" from RStudio and CRAN's [cloud download page](https://cloud.r-project.org), which will automatically detect a CRAN mirror for you to use. Select the `base` subdirectory after choosing the Windows download page. A `.exe` executable file containing the necessary components of base R can be downloaded by clicking on "Download R 3.x.x for Windows".
+>
+{: .solution}
+
+> ## macOS
+>
+>To install `R`, macOS users should select "Download R for (Mac) OS X" from RStudio and CRAN's [cloud download page](https://cloud.r-project.org), which will automatically detect a CRAN mirror for you to use. A `.pkg` file containing the necessary components of base R can be downloaded by clicking on the first available link (this will be the most recent), which will read `R-3.x.x.pkg`.
+>
+{: .solution}
+
+> ## Linux
+>
+>To install `R`, Linux users should select "Download R for Linux" from RStudio and CRAN's [cloud download page](https://cloud.r-project.org), which will automatically detect a CRAN mirror for you to use. Instructions for a number of different Linux operating systems are available.
+>
+{: .solution}
+
+### RStudio
+RStudio is an GUI for using R that is available for Windows, macOS, and various Linux operating systems. It can be downloaded [here](https://www.rstudio.com/products/rstudio/download/). You will need the **free** Desktop version for your computer.
+
+
 ### R Packages
 
 The following `R` packages are used in the various geospatial lessons.
@@ -210,7 +212,7 @@ The downloaded binary packages are in
 ~~~
 {: .output}
 
-You are now ready for the workshop!  
+You are now ready for the workshop!
 
 ## Option B: Docker
 
