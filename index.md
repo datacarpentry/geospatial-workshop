@@ -57,6 +57,6 @@ Data Carpentry's aim is to teach researchers basic concepts, skills, and tools f
 
 | Lesson    | Overview |
 | ------- | ---------- |
-| [Geospatial Project Organization and Management](http://www.datacarpentry.org/organization-geospatial/) | Understand data structures and common storage and transfer formats for spatial data. |
+| [Introduction to Geospatial Concepts](http://www.datacarpentry.org/organization-geospatial/) | Understand data structures and common storage and transfer formats for spatial data. |
 | [Introduction to R for Geospatial Data](http://www.datacarpentry.org/r-intro-geospatial) | Import data into R, calculate summary statistics, and create publication-quality graphics. |
-| [R for Raster and Vector Data](http://www.datacarpentry.org/r-raster-vector-geospatial) | Open, work with, and plot vector and raster-format spatial data in R. |
+| [Introduction to Geospatial Data with R](http://www.datacarpentry.org/r-raster-vector-geospatial) | Open, work with, and plot vector and raster-format spatial data in R. |
