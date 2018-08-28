@@ -1,7 +1,6 @@
 ---
 layout: page
 title: "Workshop data"
-permalink: /data/
 ---
 
 ## NEON Spatio-temporal Teaching Data Subset
