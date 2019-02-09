@@ -5,7 +5,7 @@ title: Setup
 
 # Overview
 
-This workshop is designed to be run on your local machine. First, you will need to download the data we use in the workshop. Then, you need to set up your machine to analyze and process geospatial data. We provide below instructions to either install all components manually (option A), or to use a Docker image that provides all the software and dependencies needed (option B).
+This workshop is designed to be run on your local machine. First, you will need to download the data we use in the workshop. Then, you need to set up your machine to analyze and process geospatial data. We provide instructions below to either install all components manually (option A), or to use a Docker image that provides all the software and dependencies needed (option B).
 
 ## Data
 
@@ -30,7 +30,7 @@ For a full description of the data used in this workshop see the [data page](dat
 | [RStudio](https://www.rstudio.com) | [Link](https://www.rstudio.com/products/rstudio/download/#download) | | Linux, MacOS, Windows | GUI for R |
 | [UDUNITS](https://www.unidata.ucar.edu/software/udunits/) | [Link](https://www.unidata.ucar.edu/downloads/udunits/index.jsp) | [Link](https://www.unidata.ucar.edu/software/udunits/#documentation) | Linux, MacOS, Windows | Unit conversions |
 
-We provide below quick instructions for installing the various software needed for this workshop. At points, they assume familiarity with the command line and with installation in general. As there are different operating systems and many different versions of operating systems and environments, these may not work on your computer. If an installation doesn't work for you, please refer to the installation instructions for that software, listed in the table above.
+We provide quick instructions below for installing the various software needed for this workshop. At points, they assume familiarity with the command line and with installation in general. As there are different operating systems and many different versions of operating systems and environments, these may not work on your computer. If an installation doesn't work for you, please refer to the installation instructions for that software listed in the table above.
 
 
 ### GDAL, GEOS, and PROJ.4
@@ -160,7 +160,7 @@ Participants who do not already have `R` installed should download and install i
 {: .solution}
 
 ### RStudio
-RStudio is an GUI for using R that is available for Windows, macOS, and various Linux operating systems. It can be downloaded [here](https://www.rstudio.com/products/rstudio/download/). You will need the **free** Desktop version for your computer.
+RStudio is a GUI for using `R` that is available for Windows, macOS, and various Linux operating systems. It can be downloaded [here](https://www.rstudio.com/products/rstudio/download/). You will need the **free** Desktop version for your computer.
 
 
 ### R Packages
@@ -218,13 +218,13 @@ You are now ready for the workshop!
 
 [Docker](https://www.docker.com) provides developers with a means for creating interactive [containers](https://docs.docker.com/glossary/?term=container) that contain pre-installed software. A selection of pre-installed software in Docker is called an [image](https://docs.docker.com/glossary/?term=image). An image can be downloaded and used to create a local container, allowing end-users to get software up and running quickly. This is particularly useful when a local installation of the software could be complex and time consuming. For `R` users, a Docker image can be used to create a virtual installation of `R` and RStudio that can be run through your web browser.
 
-Option B involves downloading an Docker image that contains an installation of `R`, RStudio Server, all of the necessary dependencies listed above, and almost all of the `R` packages used in the geospatial lessons. You will need to install the appropriate version of Docker's Community Edition software and then download and use the `rocker/geospatial` Docker image to create a container that will allow you to use `R`, RStudio, and all the required GIS tools without installing any of them locally.
+This option involves downloading an Docker image that contains an installation of `R`, RStudio Server, all of the necessary dependencies listed above, and almost all of the `R` packages used in the geospatial lessons. You will need to install the appropriate version of Docker's Community Edition software and then download and use the `rocker/geospatial` Docker image to create a container that will allow you to use `R`, RStudio, and all the required GIS tools without installing any of them locally.
 
 Once up and running - you'll have full access to RStudio right from your browser:
 
 ![](/fig/docker.png)
 
-Please be aware that the `R` package `rasterVis` is not included in the `rocker/geospatial` Docker image. If your instructor teaches with this package, this will be an `R` package you will need to install yourself. All other `R` packages will already be installed for you.
+Please be aware that the `R` package `rasterVis` is not included in the `rocker/geospatial` Docker image. If your instructor teaches with this package then you will need to install this `R` package yourself. All other `R` packages will already be installed for you.
 
 > ## Downloading and Installing Docker Community Edition
 >
