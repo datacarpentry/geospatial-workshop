@@ -253,7 +253,7 @@ Please be aware that the `R` package `rasterVis` is not included in the `rocker/
 > When `docker run` is used, you can specify a folder on your computer to become accessible inside your RStudio Server instance. The following `docker run` command exposes Jane's `GitHub` directory to RStudio Server. Enter the file path where your workshop resources and data are stored:
 >
 >~~~
->$ docker run -d -P --name gis /Users/jane/GitHub:/home/rstudio/GitHub rocker/geospatial
+>$ docker run -d -P --name gis -v /Users/jane/GitHub:/home/rstudio/GitHub -e PASSWORD=mypass rocker/geospatial
 >~~~
 >{: .language-bash}
 >
@@ -266,7 +266,7 @@ Please be aware that the `R` package `rasterVis` is not included in the `rocker/
 >~~~
 >{: .language-bash}
 >
-> An output, for example, of `8787/tcp -> 0.0.0.0:32768` would indicate that you should point your browser to `http://localhost:32768/`. If prompted, enter `rstudio` for both the username and the password.
+> An output, for example, of `8787/tcp -> 0.0.0.0:32768` would indicate that you should point your browser to `http://localhost:32768/`. If prompted, enter `rstudio` for the username and the password provided in the `docker run` command above (`mypass` in the example above).
 >
 > #### Stopping a Container
 > When you are done with a Docker session, make sure all of your files are saved locally on your computer **before closing your browser and Docker**. Once you have ensured all of your files are available (they should be saved at the file path designated in `docker run` above), you can stop your Docker container in the terminal:
