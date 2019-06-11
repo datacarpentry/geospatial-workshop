@@ -9,10 +9,10 @@ This workshop is designed to be run on your local machine. First, you will need 
 
 ## Data
 
-You can download all of the data used in this workshop by clicking 
-[this download link](https://ndownloader.figshare.com/articles/2009586/versions/10). 
+You can download all of the data used in this workshop by clicking
+[this download link](https://ndownloader.figshare.com/articles/2009586/versions/10).
 Clicking the download link will automatically download all of the files to your default download directory as a single compressed
-(`.zip`) file. To expand this file, double click the folder icon in your file navigator application (for Macs, this is the Finder 
+(`.zip`) file. To expand this file, double click the folder icon in your file navigator application (for Macs, this is the Finder
 application).
 
 For a full description of the data used in this workshop see the [data page](data).
@@ -46,14 +46,14 @@ The installation of the geospatial libraries GDAL, GEOS, and PROJ.4 varies signi
 > ## macOS
 >
 > For participants who do not already have [homebrew](https://brew.sh) installed, and who may be less comfortable with the command line, the easiest was to obtain the geospatial libraries is to install the latest version of [Kyng Chaos's pre-built package](http://www.kyngchaos.com/software/frameworks) for GDAL Complete. Be aware that several other libraries are also installed, including the UnixImageIO, SQLite3, and `NumPy`.
-> 
-> After downloading the package in the link above, you will need to double-click the 
+>
+> After downloading the package in the link above, you will need to double-click the
 > cardbord box icon to complete the installation. Depending on your security settings,
-> you may get an error message about "unidentified developers". You can enable the 
+> you may get an error message about "unidentified developers". You can enable the
 > installation by following [these instructions](https://kb.wisc.edu/page.php?id=25443)
 > for installing programs from
-> unidentified developers. 
-> 
+> unidentified developers.
+>
 > Alternatively, participants who are comfortable with the command line can install the geospatial libraries individually using [homebrew](https://brew.sh):
 >
 >~~~
@@ -94,7 +94,7 @@ The installation of the geospatial libraries GDAL, GEOS, and PROJ.4 varies signi
 >~~~
 >{: .language-bash}
 >
-> For **Debian**: The [rocker geospatial](https://github.com/rocker-org/geospatial) Dockerfiles may be helpful. Ubuntu Dockerfiles are found [here](https://github.com/r-spatial/sf/tree/master/inst/docker).
+> For **Debian**: The [rocker geospatial](https://github.com/rocker-org/geospatial) Dockerfiles may be helpful. Ubuntu Dockerfiles are found [here](https://github.com/r-spatial/sf/tree/master/inst/docker). These may be helpful to get an idea of the commands needed to install the necessary dependencies.
 >
 {: .solution}
 
@@ -160,8 +160,7 @@ Participants who do not already have `R` installed should download and install i
 {: .solution}
 
 ### RStudio
-RStudio is a GUI for using `R` that is available for Windows, macOS, and various Linux operating systems. It can be downloaded [here](https://www.rstudio.com/products/rstudio/download/). You will need the **free** Desktop version for your computer.
-
+RStudio is a GUI for using `R` that is available for Windows, macOS, and various Linux operating systems. It can be downloaded [here](https://www.rstudio.com/products/rstudio/download/). You will need the **free** Desktop version for your computer. *In order to address issues with `ggplot2`, learners and instructors should run a recent version of RStudio (v1.2 or greater).*
 
 ### R Packages
 
@@ -176,7 +175,7 @@ The following `R` packages are used in the various geospatial lessons.
 * [`sf`](https://cran.r-project.org/package=sf)
 
 To install these packages in RStudio, do the following:  
-1\. Open RStudio by double-clicking the RStudio application icon. You should see 
+1\. Open RStudio by double-clicking the RStudio application icon. You should see
 something like this:
 
 ![RStudio layout](/fig/01-rstudio.png)
@@ -204,7 +203,7 @@ downloaded 3.4 MB
 ~~~
 {: .output}
 
-When the installation is complete, you will see a status message like: 
+When the installation is complete, you will see a status message like:
 
 ~~~
 The downloaded binary packages are in
