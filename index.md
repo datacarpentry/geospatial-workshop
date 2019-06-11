@@ -5,6 +5,12 @@ root: .
 
 Data Carpentry's aim is to teach researchers basic concepts, skills, and tools for working with data so that they can get more done in less time, and with less pain. 
 
+
+Interested in teaching these materials? We have an [onboarding video](https://www.youtube.com/watch?v=Qtnb_eeHt7E) available to prepare Instructors to teach these lessons. After
+watching this video, please contact [team@carpentries.org](mailto:team@carpentries.org) so that we can record your status as an onboarded
+Instructor. Instructors who have completed onboarding will be given priority status for teaching at centrally-organized Data Carpentry Geospatial workshops.
+
+
 > ## Getting Started
 >
 > Data Carpentry’s teaching is hands-on, so participants are encouraged to use 
