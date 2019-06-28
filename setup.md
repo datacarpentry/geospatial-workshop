@@ -5,14 +5,14 @@ title: Setup
 
 # Overview
 
-This workshop is designed to be run on your local machine. First, you will need to download the data we use in the workshop. Then, you need to set up your machine to analyze and process geospatial data. We provide below instructions to either install all components manually (option A), or to use a Docker image that provides all the software and dependencies needed (option B).
+This workshop is designed to be run on your local machine. First, you will need to download the data we use in the workshop. Then, you need to set up your machine to analyze and process geospatial data. We provide instructions below to either install all components manually (option A), or to use a Docker image that provides all the software and dependencies needed (option B).
 
 ## Data
 
-You can download all of the data used in this workshop by clicking 
-[this download link](https://ndownloader.figshare.com/articles/2009586/versions/10). 
+You can download all of the data used in this workshop by clicking
+[this download link](https://ndownloader.figshare.com/articles/2009586/versions/10).
 Clicking the download link will automatically download all of the files to your default download directory as a single compressed
-(`.zip`) file. To expand this file, double click the folder icon in your file navigator application (for Macs, this is the Finder 
+(`.zip`) file. To expand this file, double click the folder icon in your file navigator application (for Macs, this is the Finder
 application).
 
 For a full description of the data used in this workshop see the [data page](data).
@@ -30,7 +30,7 @@ For a full description of the data used in this workshop see the [data page](dat
 | [RStudio](https://www.rstudio.com) | [Link](https://www.rstudio.com/products/rstudio/download/#download) | | Linux, MacOS, Windows | GUI for R |
 | [UDUNITS](https://www.unidata.ucar.edu/software/udunits/) | [Link](https://www.unidata.ucar.edu/downloads/udunits/index.jsp) | [Link](https://www.unidata.ucar.edu/software/udunits/#documentation) | Linux, MacOS, Windows | Unit conversions |
 
-We provide below quick instructions for installing the various software needed for this workshop. At points, they assume familiarity with the command line and with installation in general. As there are different operating systems and many different versions of operating systems and environments, these may not work on your computer. If an installation doesn't work for you, please refer to the installation instructions for that software, listed in the table above.
+We provide quick instructions below for installing the various software needed for this workshop. At points, they assume familiarity with the command line and with installation in general. As there are different operating systems and many different versions of operating systems and environments, these may not work on your computer. If an installation doesn't work for you, please refer to the installation instructions for that software listed in the table above.
 
 
 ### GDAL, GEOS, and PROJ.4
@@ -46,14 +46,14 @@ The installation of the geospatial libraries GDAL, GEOS, and PROJ.4 varies signi
 > ## macOS
 >
 > For participants who do not already have [homebrew](https://brew.sh) installed, and who may be less comfortable with the command line, the easiest was to obtain the geospatial libraries is to install the latest version of [Kyng Chaos's pre-built package](http://www.kyngchaos.com/software/frameworks) for GDAL Complete. Be aware that several other libraries are also installed, including the UnixImageIO, SQLite3, and `NumPy`.
-> 
-> After downloading the package in the link above, you will need to double-click the 
+>
+> After downloading the package in the link above, you will need to double-click the
 > cardbord box icon to complete the installation. Depending on your security settings,
-> you may get an error message about "unidentified developers". You can enable the 
+> you may get an error message about "unidentified developers". You can enable the
 > installation by following [these instructions](https://kb.wisc.edu/page.php?id=25443)
 > for installing programs from
-> unidentified developers. 
-> 
+> unidentified developers.
+>
 > Alternatively, participants who are comfortable with the command line can install the geospatial libraries individually using [homebrew](https://brew.sh):
 >
 >~~~
@@ -94,7 +94,7 @@ The installation of the geospatial libraries GDAL, GEOS, and PROJ.4 varies signi
 >~~~
 >{: .language-bash}
 >
-> For **Debian**: The [rocker geospatial](https://github.com/rocker-org/geospatial) Dockerfiles may be helpful. Ubuntu Dockerfiles are found [here](https://github.com/r-spatial/sf/tree/master/inst/docker).
+> For **Debian**: The [rocker geospatial](https://github.com/rocker-org/geospatial) Dockerfiles may be helpful. Ubuntu Dockerfiles are found [here](https://github.com/r-spatial/sf/tree/master/inst/docker). These may be helpful to get an idea of the commands needed to install the necessary dependencies.
 >
 {: .solution}
 
@@ -160,8 +160,7 @@ Participants who do not already have `R` installed should download and install i
 {: .solution}
 
 ### RStudio
-RStudio is an GUI for using R that is available for Windows, macOS, and various Linux operating systems. It can be downloaded [here](https://www.rstudio.com/products/rstudio/download/). You will need the **free** Desktop version for your computer.
-
+RStudio is a GUI for using `R` that is available for Windows, macOS, and various Linux operating systems. It can be downloaded [here](https://www.rstudio.com/products/rstudio/download/). You will need the **free** Desktop version for your computer. *In order to address issues with `ggplot2`, learners and instructors should run a recent version of RStudio (v1.2 or greater).*
 
 ### R Packages
 
@@ -176,7 +175,7 @@ The following `R` packages are used in the various geospatial lessons.
 * [`sf`](https://cran.r-project.org/package=sf)
 
 To install these packages in RStudio, do the following:  
-1\. Open RStudio by double-clicking the RStudio application icon. You should see 
+1\. Open RStudio by double-clicking the RStudio application icon. You should see
 something like this:
 
 ![RStudio layout](/fig/01-rstudio.png)
@@ -204,7 +203,7 @@ downloaded 3.4 MB
 ~~~
 {: .output}
 
-When the installation is complete, you will see a status message like: 
+When the installation is complete, you will see a status message like:
 
 ~~~
 The downloaded binary packages are in
@@ -218,13 +217,13 @@ You are now ready for the workshop!
 
 [Docker](https://www.docker.com) provides developers with a means for creating interactive [containers](https://docs.docker.com/glossary/?term=container) that contain pre-installed software. A selection of pre-installed software in Docker is called an [image](https://docs.docker.com/glossary/?term=image). An image can be downloaded and used to create a local container, allowing end-users to get software up and running quickly. This is particularly useful when a local installation of the software could be complex and time consuming. For `R` users, a Docker image can be used to create a virtual installation of `R` and RStudio that can be run through your web browser.
 
-Option B involves downloading an Docker image that contains an installation of `R`, RStudio Server, all of the necessary dependencies listed above, and almost all of the `R` packages used in the geospatial lessons. You will need to install the appropriate version of Docker's Community Edition software and then download and use the `rocker/geospatial` Docker image to create a container that will allow you to use `R`, RStudio, and all the required GIS tools without installing any of them locally.
+This option involves downloading an Docker image that contains an installation of `R`, RStudio Server, all of the necessary dependencies listed above, and almost all of the `R` packages used in the geospatial lessons. You will need to install the appropriate version of Docker's Community Edition software and then download and use the `rocker/geospatial` Docker image to create a container that will allow you to use `R`, RStudio, and all the required GIS tools without installing any of them locally.
 
 Once up and running - you'll have full access to RStudio right from your browser:
 
 ![](/fig/docker.png)
 
-Please be aware that the `R` package `rasterVis` is not included in the `rocker/geospatial` Docker image. If your instructor teaches with this package, this will be an `R` package you will need to install yourself. All other `R` packages will already be installed for you.
+Please be aware that the `R` package `rasterVis` is not included in the `rocker/geospatial` Docker image. If your instructor teaches with this package then you will need to install this `R` package yourself. All other `R` packages will already be installed for you.
 
 > ## Downloading and Installing Docker Community Edition
 >
@@ -253,7 +252,7 @@ Please be aware that the `R` package `rasterVis` is not included in the `rocker/
 > When `docker run` is used, you can specify a folder on your computer to become accessible inside your RStudio Server instance. The following `docker run` command exposes Jane's `GitHub` directory to RStudio Server. Enter the file path where your workshop resources and data are stored:
 >
 >~~~
->$ docker run -d -P --name gis /Users/jane/GitHub:/home/rstudio/GitHub rocker/geospatial
+>$ docker run -d -P --name gis -v /Users/jane/GitHub:/home/rstudio/GitHub -e PASSWORD=mypass rocker/geospatial
 >~~~
 >{: .language-bash}
 >
@@ -266,7 +265,7 @@ Please be aware that the `R` package `rasterVis` is not included in the `rocker/
 >~~~
 >{: .language-bash}
 >
-> An output, for example, of `8787/tcp -> 0.0.0.0:32768` would indicate that you should point your browser to `http://localhost:32768/`. If prompted, enter `rstudio` for both the username and the password.
+> An output, for example, of `8787/tcp -> 0.0.0.0:32768` would indicate that you should point your browser to `http://localhost:32768/`. If prompted, enter `rstudio` for the username and the password provided in the `docker run` command above (`mypass` in the example above).
 >
 > #### Stopping a Container
 > When you are done with a Docker session, make sure all of your files are saved locally on your computer **before closing your browser and Docker**. Once you have ensured all of your files are available (they should be saved at the file path designated in `docker run` above), you can stop your Docker container in the terminal:
