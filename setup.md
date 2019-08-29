@@ -9,7 +9,7 @@ This workshop is designed to be run on your local machine. First, you will need 
 
 ## Data
 
-You can download all of the data used in this workshop by clicking 
+You can download all of the data used in this workshop by clicking
 [this download link](https://ndownloader.figshare.com/articles/2009586/versions/10). The file is 218.2 MB.
 
 Clicking the download link will automatically download all of the files to your default download directory as a single compressed
@@ -24,7 +24,7 @@ For a full description of the data used in this workshop see the [data page](dat
 
 | Software | Install | Manual | Available for | Description |
 | -------- | ------------ | ------ | ------------- | ----------- |
-| [GDAL](http://www.gdal.org) | [Link](http://www.gdal.org/usergroup0.html) | [Link](http://www.gdal.org) | Linux, MacOS, Windows | Geospatial model for reading and writing a variety of formats |
+| [GDAL](http://www.gdal.org) | [Link](https://gdal.org/download.html) | [Link](https://gdal.org) | Linux, MacOS, Windows | Geospatial model for reading and writing a variety of formats |
 | [GEOS](https://trac.osgeo.org/geos) | [Link](https://trac.osgeo.org/geos) | [Link](http://geos.osgeo.org/doxygen/) | Linux, MacOS, Windows | Geometry models and operations |
 | [PROJ.4](http://proj4.org) | [Link](http://proj4.org/install.html)| [Link](http://proj4.org/index.html)| Linux, MacOS, Windows | Coordinate reference system transformations |
 | [R](https://www.r-project.org) | [Link](https://cloud.r-project.org) | [Link](https://cloud.r-project.org) | Linux, MacOS, Windows | Software environment for statistical and scientific computing |
@@ -44,16 +44,13 @@ The installation of the geospatial libraries GDAL, GEOS, and PROJ.4 varies signi
 >
 {: .solution}
 
-> ## macOS
+> ## macOS - Install with Packages (Beginning)
 >
-> For participants who do not already have [homebrew](https://brew.sh) installed, and who may be less comfortable with the command line, the easiest was to obtain the geospatial libraries is to install the latest version of [Kyng Chaos's pre-built package](http://www.kyngchaos.com/software/frameworks) for GDAL Complete. Be aware that several other libraries are also installed, including the UnixImageIO, SQLite3, and `NumPy`.
+> The simplest way to install these geospatial libraries is to install the latest version of [Kyng Chaos's pre-built package](http://www.kyngchaos.com/software/frameworks) for GDAL Complete. Be aware that several other libraries are also installed, including the UnixImageIO, SQLite3, and `NumPy`.
 >
-> After downloading the package in the link above, you will need to double-click the
-> cardbord box icon to complete the installation. Depending on your security settings,
-> you may get an error message about "unidentified developers". You can enable the
-> installation by following [these instructions](https://kb.wisc.edu/page.php?id=25443)
-> for installing programs from
-> unidentified developers.
+> After downloading the package in the link above, you will need to double-click the cardbord box icon to complete the installation. Depending on your security settings, you may get an error message about "unidentified developers". You can enable the installation by following [these instructions](https://kb.wisc.edu/page.php?id=25443) for installing programs from unidentified developers.
+>
+> ## macOS - Install with Homebrew (Advanced)
 >
 > Alternatively, participants who are comfortable with the command line can install the geospatial libraries individually using [homebrew](https://brew.sh):
 >
