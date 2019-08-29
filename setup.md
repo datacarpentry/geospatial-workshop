@@ -44,7 +44,7 @@ The installation of the geospatial libraries GDAL, GEOS, and PROJ.4 varies signi
 >
 {: .solution}
 
-> ## macOS - Install with Packages (Beginning)
+> ## macOS - Install with Packages (Beginner)
 >
 > The simplest way to install these geospatial libraries is to install the latest version of [Kyng Chaos's pre-built package](http://www.kyngchaos.com/software/frameworks) for GDAL Complete. Be aware that several other libraries are also installed, including the UnixImageIO, SQLite3, and `NumPy`.
 >
@@ -60,8 +60,7 @@ The installation of the geospatial libraries GDAL, GEOS, and PROJ.4 varies signi
 >$ brew tap osgeo/osgeo4mac && brew tap --repair
 >$ brew install proj
 >$ brew install geos
->$ brew install gdal2 --with-armadillo --with-complete --with-libkml --with-unsupported
->$ brew link --force gdal2
+>$ brew install gdal2
 >~~~
 >{: .language-bash}
 >
