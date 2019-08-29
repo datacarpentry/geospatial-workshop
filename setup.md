@@ -50,6 +50,8 @@ The installation of the geospatial libraries GDAL, GEOS, and PROJ.4 varies signi
 >
 > After downloading the package in the link above, you will need to double-click the cardbord box icon to complete the installation. Depending on your security settings, you may get an error message about "unidentified developers". You can enable the installation by following [these instructions](https://kb.wisc.edu/page.php?id=25443) for installing programs from unidentified developers.
 >
+{: .solution}
+
 > ## macOS - Install with Homebrew (Advanced)
 >
 > Alternatively, participants who are comfortable with the command line can install the geospatial libraries individually using [homebrew](https://brew.sh):
