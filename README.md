@@ -4,7 +4,8 @@
 
 # Geospatial Workshop
 
-Overview of the Geospatial workshop. 
+This is a variant of the [Geospatial Data Carpentry Workshop](https://datacarpentry.org/geospatial-workshop/)
+created at UW-Madison as part of video workshop series.
 
 ## Code of Conduct
 
