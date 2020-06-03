@@ -5,7 +5,15 @@ title: Setup
 
 # Overview
 
-This workshop is designed to be run on your local machine. First, you will need to download the data we use in the workshop. Then, you need to set up your machine to analyze and process geospatial data. We provide instructions below to either install all components manually (option A), or to use a Docker image that provides all the software and dependencies needed (option B).
+This workshop is designed to be run on your local machine. First, you will need to download the data we use in the workshop. Then, you need to set up your machine to analyze and process geospatial data.
+
+We provide two setup options:
+
+### Option A: Install manually for your operating system
+Install components manually. Instructions are provided for MacOS, Windows, and Linux operating systems. Some of the required software are installed together as packages.
+
+### Option B: Use a Docker image (Advanced)
+Users can download a Docker image containing all the software and dependencies needed.
 
 ## Data
 
