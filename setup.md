@@ -33,7 +33,7 @@ We provide quick instructions below for installing the various software needed f
 | [RStudio](https://www.rstudio.com) | [Link](https://www.rstudio.com/products/rstudio/download/#download) | | Linux, MacOS, Windows | GUI for R |
 | [UDUNITS](https://www.unidata.ucar.edu/software/udunits/) | [Link](https://www.unidata.ucar.edu/downloads/udunits/index.jsp) | [Link](https://www.unidata.ucar.edu/software/udunits/#documentation) | Linux, MacOS, Windows | Unit conversions |
 
-### R and R Studio
+### R and RStudio
 
 Participants who do not already have `R` installed should download and install it.
 
