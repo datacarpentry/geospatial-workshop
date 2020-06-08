@@ -32,14 +32,14 @@ For a full description of the data used in this workshop see the [data page](dat
 
 We provide quick instructions below for installing the various software needed for this workshop. At points, they assume familiarity with the command line and with installation in general. As there are different operating systems and many different versions of operating systems and environments, these may not work on your computer. If an installation doesn't work for you, please refer to the installation instructions for that software listed in the table below.
 
-| Software | Install | Manual | Available for | Description |
+| Software | Description | Install | Manual | Available for |
 | -------- | ------------ | ------ | ------------- | ----------- |
-| [GDAL](http://www.gdal.org) | [Link](https://gdal.org/download.html) | [Link](https://gdal.org) | Linux, MacOS, Windows | Geospatial model for reading and writing a variety of formats |
-| [GEOS](https://trac.osgeo.org/geos) | [Link](https://trac.osgeo.org/geos) | [Link](http://geos.osgeo.org/doxygen/) | Linux, MacOS, Windows | Geometry models and operations |
-| [PROJ.4](http://proj4.org) | [Link](http://proj4.org/install.html)| [Link](http://proj4.org/index.html)| Linux, MacOS, Windows | Coordinate reference system transformations |
-| [R](https://www.r-project.org) | [Link](https://cloud.r-project.org) | [Link](https://cloud.r-project.org) | Linux, MacOS, Windows | Software environment for statistical and scientific computing |
-| [RStudio](https://www.rstudio.com) | [Link](https://www.rstudio.com/products/rstudio/download/#download) | | Linux, MacOS, Windows | GUI for R |
-| [UDUNITS](https://www.unidata.ucar.edu/software/udunits/) | [Link](https://www.unidata.ucar.edu/downloads/udunits/index.jsp) | [Link](https://www.unidata.ucar.edu/software/udunits/#documentation) | Linux, MacOS, Windows | Unit conversions |
+| [GDAL](http://www.gdal.org) | Geospatial model for reading and writing a variety of formats | [Link](https://gdal.org/download.html) | [Link](https://gdal.org) | Linux, MacOS, Windows |
+| [GEOS](https://trac.osgeo.org/geos) | Geometry models and operations | [Link](https://trac.osgeo.org/geos) | [Link](http://geos.osgeo.org/doxygen/) | Linux, MacOS, Windows |
+| [PROJ.4](http://proj4.org) | Coordinate reference system transformations | [Link](http://proj4.org/install.html)| [Link](http://proj4.org/index.html)| Linux, MacOS, Windows |
+| [R](https://www.r-project.org) | Software environment for statistical and scientific computing | [Link](https://cloud.r-project.org) | [Link](https://cloud.r-project.org) | Linux, MacOS, Windows |
+| [RStudio](https://www.rstudio.com) | GUI for R | [Link](https://www.rstudio.com/products/rstudio/download/#download) | | Linux, MacOS, Windows |
+| [UDUNITS](https://www.unidata.ucar.edu/software/udunits/) |Unit conversions | [Link](https://www.unidata.ucar.edu/downloads/udunits/index.jsp) | [Link](https://www.unidata.ucar.edu/software/udunits/#documentation) | Linux, MacOS, Windows | 
 
 ### R and RStudio
 
