@@ -5,7 +5,7 @@ title: Setup
 
 # Overview
 
-This workshop is designed to be run on your local machine. First, you will need to download the data we use in the workshop. Then, you need to set up your machine to analyze and process geospatial data.
+This workshop is designed to be run on your own computer. First, you need to download the data we use in the workshop. Then, you need to set up your computer by installing the software needed to analyze and process geospatial data.
 
 We provide two setup options:
 
@@ -13,16 +13,14 @@ We provide two setup options:
 Install components manually. Instructions are provided for MacOS, Windows, and Linux operating systems. Some of the required software are installed together as packages.
 
 ### Option B: Use a Docker image (Advanced)
-Users can download a Docker image containing all the software and dependencies needed.
+Workshop participants can download a Docker image containing all the software and dependencies needed.
 
 ## Data
 
 You can download all of the data used in this workshop by clicking
 [this download link](https://ndownloader.figshare.com/articles/2009586/versions/10). The file is 218.2 MB.
 
-Clicking the download link will automatically download all of the files to your default download directory as a single compressed
-(`.zip`) file. To expand this file, double click the folder icon in your file navigator application (for Macs, this is the Finder
-application).
+The data will download as a single compressed (`.zip`) file. Expanding this file will depend on your operating system.
 
 For a full description of the data used in this workshop see the [data page](data).
 
@@ -30,7 +28,7 @@ For a full description of the data used in this workshop see the [data page](dat
 
 ### Software
 
-We provide quick instructions below for installing the various software needed for this workshop. At points, they assume familiarity with the command line and with installation in general. As there are different operating systems and many different versions of operating systems and environments, these may not work on your computer. If an installation doesn't work for you, please refer to the installation instructions for that software listed in the table below.
+We provide detailed instructions for installing the software needed for this workshop. At points, the instructions assume some familiarity with the software installation process. As there are different operating systems and many different versions of operating systems and environments, these may not work on your computer. If an installation doesn't work for you, please refer to the installation instructions for that software listed in the table below. Most  participants will not need to install these software individually.
 
 | Software | Description | Install | Manual | Available for |
 | -------- | ------------ | ------ | ------------- | ----------- |
