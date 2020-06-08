@@ -68,13 +68,13 @@ RStudio is a GUI for using `R` that is available for Windows, macOS, and  Linux 
 
 > ## Windows
 >
->Download the executable installer (`.exe`) from the [RStudio download page](https://rstudio.com/products/rstudio/download/#download). You will need the **free** Desktop version for your computer. Run the installer to install RStudio on your computer.
+>From the [RStudio download page](https://rstudio.com/products/rstudio/download/#download), download the executable (`.exe`) installer by clicking the button labeled Download RStudio for Windows. Run the installer to install RStudio on your computer.
 >
 {: .solution}
 
 > ## macOS
 >
->Download the disk image (`.dmg`) from the [RStudio download page](https://www.rstudio.com/products/rstudio/download/). You will need the **free** Desktop version for your computer. Mount the disk image and drag to your applications directory.
+>From the [RStudio download page](https://rstudio.com/products/rstudio/download/#download), download the disk image (`.dmg`) installer by clicking the button labeled Download RStudio for MacOS. Mount the disk image and drag to your applications directory.
 >
 {: .solution}
 
