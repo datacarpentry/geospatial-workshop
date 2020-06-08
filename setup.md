@@ -10,9 +10,9 @@ This workshop is designed to be run on your own computer. First, you need to dow
 We provide two setup options:
 
 ### Option A: Install manually for your operating system
-Install components manually. Instructions are provided for MacOS, Windows, and Linux operating systems. Some of the required software are installed together as packages.
+Install software by following the instructions below specific to the operating system you are using. Instructions are provided for Windows, MacOS, and Linux.
 
-### Option B: Use a Docker image (Advanced)
+### Option B: Use a Docker image
 Workshop participants can download a Docker image containing all the software and dependencies needed.
 
 ## Data
@@ -28,7 +28,7 @@ For a full description of the data used in this workshop see the [data page](dat
 
 ### Software
 
-We provide detailed instructions for installing the software needed for this workshop. At points, the instructions assume some familiarity with the software installation process. As there are different operating systems and many different versions of operating systems and environments, these may not work on your computer. If an installation doesn't work for you, please refer to the installation instructions for that software listed in the table below. Most  participants will not need to install these software individually.
+We provide detailed instructions for installing the software needed for this workshop. At points, the instructions assume some familiarity with the software installation process. As there are many different operating systems and environments, the instructions may not work on your computer.  If an installation doesn't work for you, please refer to the installation instructions for that software listed in the table below. Most  participants will not need to install these software individually.
 
 | Software | Description | Install | Manual | Available for |
 | -------- | ------------ | ------ | ------------- | ----------- |
@@ -45,7 +45,7 @@ Participants who do not already have `R` installed should download and install i
 
 > ## Windows
 >
->To install `R`, Windows users should select "Download R for Windows" from RStudio and CRAN's [cloud download page](https://cloud.r-project.org), which will automatically detect a CRAN mirror for you to use. Select the `base` subdirectory after choosing the Windows download page. A `.exe` executable file containing the necessary components of base R can be downloaded by clicking on "Download R 3.x.x for Windows".
+>To install `R`, Windows users should select "Download R for Windows" from RStudio and CRAN's [cloud download page](https://cloud.r-project.org), which will automatically detect a CRAN mirror for you to use. Select the `base` subdirectory after choosing the Windows download page. A `.exe` executable file containing the necessary components of base R can be downloaded by clicking on "Download R 4.x.x for Windows".
 >
 {: .solution}
 
@@ -57,12 +57,34 @@ Participants who do not already have `R` installed should download and install i
 
 > ## Linux
 >
+>Most Linux users can install R using the package management software on their computer. R is a part of many linux distributions.
+>
 >To install `R`, Linux users should select "Download R for Linux" from RStudio and CRAN's [cloud download page](https://cloud.r-project.org), which will automatically detect a CRAN mirror for you to use. Instructions for a number of different Linux operating systems are available.
 >
 {: .solution}
 
 ### RStudio
-RStudio is a GUI for using `R` that is available for Windows, macOS, and various Linux operating systems. It can be downloaded [here](https://www.rstudio.com/products/rstudio/download/). You will need the **free** Desktop version for your computer. *In order to address issues with `ggplot2`, learners and instructors should run a recent version of RStudio (v1.2 or greater).*
+RStudio is a GUI for using `R` that is available for Windows, macOS, and  Linux operating systems. 
+
+> ## Windows
+>
+>Download the executable installer (`.exe`) from the [RStudio download page](https://rstudio.com/products/rstudio/download/#download). You will need the **free** Desktop version for your computer. Run the installer to install RStudio on your computer.
+>
+{: .solution}
+
+> ## macOS
+>
+>Download the disk image (`.dmg`) from the [RStudio download page](https://www.rstudio.com/products/rstudio/download/). You will need the **free** Desktop version for your computer. Run the installer to install RStudio on your computer. Mount the disk image and drag to your applications directory.
+>
+{: .solution}
+
+> ## Linux
+>
+>Most Linux users can install RStudio using the package management software on their computer.
+>
+>The [RStudio download page](https://www.rstudio.com/products/rstudio/download/) has installers for some of the most popular Linux distributions.
+>
+{: .solution}
 
 ### R Packages
 
