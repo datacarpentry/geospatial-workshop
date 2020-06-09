@@ -10,7 +10,7 @@ This workshop is designed to be run on your own computer. First, you need to dow
 We provide two setup options:
 
 ### Option A: Install manually for your operating system
-Install software by following the instructions below specific to the operating system you are using. Instructions are provided for Windows, MacOS, and Linux.
+Install software by following the instructions below specific to the operating system you are using. Instructions are provided for Windows, macOS, and Linux.
 
 ### Option B: Use a Docker image
 Workshop participants can download a Docker image containing all the software and dependencies needed.
@@ -32,14 +32,14 @@ We provide detailed instructions for installing the software needed for this wor
 
 | Software | Description | Install | Manual | Available for |
 | -------- | ------------ | ------ | ------------- | ----------- |
-| [GDAL](http://www.gdal.org) | Geospatial model for reading and writing a variety of formats | [Link](https://gdal.org/download.html) | [Link](https://gdal.org) | Linux, MacOS, Windows |
-| [GEOS](https://trac.osgeo.org/geos) | Geometry models and operations | [Link](https://trac.osgeo.org/geos) | [Link](http://geos.osgeo.org/doxygen/) | Linux, MacOS, Windows |
-| [PROJ.4](http://proj4.org) | Coordinate reference system transformations | [Link](http://proj4.org/install.html)| [Link](http://proj4.org/index.html)| Linux, MacOS, Windows |
-| [R](https://www.r-project.org) | Software environment for statistical and scientific computing | [Link](https://cloud.r-project.org) | [Link](https://cloud.r-project.org) | Linux, MacOS, Windows |
-| [RStudio](https://www.rstudio.com) | GUI for R | [Link](https://www.rstudio.com/products/rstudio/download/#download) | | Linux, MacOS, Windows |
-| [UDUNITS](https://www.unidata.ucar.edu/software/udunits/) |Unit conversions | [Link](https://www.unidata.ucar.edu/downloads/udunits/index.jsp) | [Link](https://www.unidata.ucar.edu/software/udunits/#documentation) | Linux, MacOS, Windows | 
+| [GDAL](http://www.gdal.org) | Geospatial model for reading and writing a variety of formats | [Link](https://gdal.org/download.html) | [Link](https://gdal.org) | Windows, macOS, Linux |
+| [GEOS](https://trac.osgeo.org/geos) | Geometry models and operations | [Link](https://trac.osgeo.org/geos) | [Link](http://geos.osgeo.org/doxygen/) | Windows, macOS, Linux |
+| [PROJ.4](http://proj4.org) | Coordinate reference system transformations | [Link](http://proj4.org/install.html)| [Link](http://proj4.org/index.html)| Windows, macOS, Linux |
+| [R](https://www.r-project.org) | Software environment for statistical and scientific computing | [Link](https://cloud.r-project.org) | [Link](https://cloud.r-project.org) | Windows, macOS, Linux |
+| [RStudio](https://www.rstudio.com) | GUI for R | [Link](https://www.rstudio.com/products/rstudio/download/#download) | | Windows, macOS, Linux |
+| [UDUNITS](https://www.unidata.ucar.edu/software/udunits/) |Unit conversions | [Link](https://www.unidata.ucar.edu/downloads/udunits/index.jsp) | [Link](https://www.unidata.ucar.edu/software/udunits/#documentation) | Windows, macOS, Linux | 
 
-### R and RStudio
+### R
 
 Participants who do not already have `R` installed should download and install it.
 
@@ -74,7 +74,7 @@ RStudio is a GUI for using `R` that is available for Windows, macOS, and  Linux 
 
 > ## macOS
 >
->From the [RStudio download page](https://rstudio.com/products/rstudio/download/#download), download the disk image (`.dmg`) installer by clicking the button labeled Download RStudio for MacOS. Mount the disk image and drag to your applications directory.
+>From the [RStudio download page](https://rstudio.com/products/rstudio/download/#download), download the disk image (`.dmg`) installer by clicking the button labeled Download RStudio for macOS. Mount the disk image and drag to your applications directory.
 >
 {: .solution}
 
