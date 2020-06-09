@@ -41,17 +41,17 @@ We provide detailed instructions for installing the software needed for this wor
 
 ### R
 
-Participants who do not already have `R` installed should download and install it.
+Participants who do not already have R installed should download and install it.
 
 > ## Windows
 >
->To install `R`, Windows users should select "Download R for Windows" from RStudio and CRAN's [cloud download page](https://cloud.r-project.org), which will automatically detect a CRAN mirror for you to use. Select the `base` subdirectory after choosing the Windows download page. A `.exe` executable file containing the necessary components of base R can be downloaded by clicking on "Download R 4.x.x for Windows".
+>To install R, Windows users should select "Download R for Windows" from RStudio and CRAN's [cloud download page](https://cloud.r-project.org), which will automatically detect a CRAN mirror for you to use. Select the `base` subdirectory after choosing the Windows download page. A `.exe` executable file containing the necessary components of base R can be downloaded by clicking on "Download R 4.x.x for Windows".
 >
 {: .solution}
 
 > ## macOS
 >
->To install `R`, macOS users should select "Download R for (Mac) OS X" from RStudio and CRAN's [cloud download page](https://cloud.r-project.org), which will automatically detect a CRAN mirror for you to use. A `.pkg` file containing the necessary components of base R can be downloaded by clicking on the first available link (this will be the most recent), which will read `R-3.x.x.pkg`.
+>To install R, macOS users should select "Download R for (Mac) OS X" from RStudio and CRAN's [cloud download page](https://cloud.r-project.org), which will automatically detect a CRAN mirror for you to use. A `.pkg` file containing the necessary components of base R can be downloaded by clicking on the first available link (this will be the most recent), which will read `R-3.x.x.pkg`.
 >
 {: .solution}
 
@@ -59,12 +59,12 @@ Participants who do not already have `R` installed should download and install i
 >
 >Most Linux users can install R using the package management software on their computer. R is a part of many linux distributions.
 >
->To install `R`, Linux users should select "Download R for Linux" from RStudio and CRAN's [cloud download page](https://cloud.r-project.org), which will automatically detect a CRAN mirror for you to use. Instructions for a number of different Linux operating systems are available.
+>To install R, Linux users should select "Download R for Linux" from RStudio and CRAN's [cloud download page](https://cloud.r-project.org), which will automatically detect a CRAN mirror for you to use. Instructions for a number of different Linux operating systems are available.
 >
 {: .solution}
 
 ### RStudio
-RStudio is a GUI for using `R` that is available for Windows, macOS, and  Linux operating systems. 
+RStudio is a GUI for using R that is available for Windows, macOS, and  Linux operating systems. 
 
 > ## Windows
 >
@@ -88,15 +88,15 @@ RStudio is a GUI for using `R` that is available for Windows, macOS, and  Linux 
 
 ### R Packages
 
-The following `R` packages are used in the various geospatial lessons.
+The following R packages are used in the various geospatial lessons.
 
-* [`dplyr`](https://cran.r-project.org/package=dplyr)
-* [`ggplot2`](https://cran.r-project.org/package=ggplot2)
-* [`raster`](https://cran.r-project.org/package=raster)
-* [`rgdal`](https://cran.r-project.org/package=rgdal)
-* [`rasterVis`](https://cran.r-project.org/package=rasterVis)
-* [`remotes`](https://cran.r-project.org/package=remotes)
-* [`sf`](https://cran.r-project.org/package=sf)
+* [dplyr](https://cran.r-project.org/package=dplyr)
+* [ggplot2](https://cran.r-project.org/package=ggplot2)
+* [raster](https://cran.r-project.org/package=raster)
+* [rgdal](https://cran.r-project.org/package=rgdal)
+* [rasterVis](https://cran.r-project.org/package=rasterVis)
+* [remotes](https://cran.r-project.org/package=remotes)
+* [sf](https://cran.r-project.org/package=sf)
 
 To install these packages in RStudio, do the following:  
 1\. Open RStudio by double-clicking the RStudio application icon. You should see
@@ -137,7 +137,7 @@ The downloaded binary packages are in
 
 ### GDAL, GEOS, and PROJ.4
 
-The installation of the geospatial libraries GDAL, GEOS, and PROJ.4 varies significantly based on operating system. These are all dependencies for `sf`, the `R` package that we will be using for spatial data operations throughout this workshop.
+The installation of the geospatial libraries GDAL, GEOS, and PROJ.4 varies significantly based on operating system. These are all dependencies for `sf`, the R package that we will be using for spatial data operations throughout this workshop.
 
 > ## Windows
 >
@@ -147,7 +147,7 @@ The installation of the geospatial libraries GDAL, GEOS, and PROJ.4 varies signi
 
 > ## macOS - Install with Packages (Beginner)
 >
-> The simplest way to install these geospatial libraries is to install the latest version of [Kyng Chaos's pre-built package](http://www.kyngchaos.com/software/frameworks) for GDAL Complete. Be aware that several other libraries are also installed, including the UnixImageIO, SQLite3, and `NumPy`.
+> The simplest way to install these geospatial libraries is to install the latest version of [Kyng Chaos's pre-built package](http://www.kyngchaos.com/software/frameworks) for GDAL Complete. Be aware that several other libraries are also installed, including the UnixImageIO, SQLite3, and NumPy.
 >
 > After downloading the package in the link above, you will need to double-click the cardbord box icon to complete the installation. Depending on your security settings, you may get an error message about "unidentified developers". You can enable the installation by following [these instructions](https://kb.wisc.edu/page.php?id=25443) for installing programs from unidentified developers.
 >
@@ -169,7 +169,7 @@ The installation of the geospatial libraries GDAL, GEOS, and PROJ.4 varies signi
 
 > ## Linux
 >
-> Steps for installing the geospatial libraries will vary based on which form of Linux you are using. These instructions are adapted from the [`sf` package's `README`](https://github.com/r-spatial/sf).
+> Steps for installing the geospatial libraries will vary based on which form of Linux you are using. These instructions are adapted from the [sf package's README](https://github.com/r-spatial/sf).
 >
 >Users who already have QGIS installed may find that all the geospatial packages are installed already. You can confirm and update specific packages in your system's package manager.
 >
@@ -202,11 +202,11 @@ The installation of the geospatial libraries GDAL, GEOS, and PROJ.4 varies signi
 
 ### UDUNITS
 
-Linux users will have to install UDUNITS separately. Like the geospatial libraries discussed above, this is a dependency for the `R` package `sf`. Due to conflicts, it does not install properly on Linux machines when installed as part of the `sf` installation process. It is therefore necessary to install it using the command line ahead of time.
+Linux users will have to install UDUNITS separately. Like the geospatial libraries discussed above, this is a dependency for the R package `sf`. Due to conflicts, it does not install properly on Linux machines when installed as part of the `sf` installation process. It is therefore necessary to install it using the command line ahead of time.
 
 > ## Linux
 >
-> Steps for installing the geospatial will vary based on which form of Linux you are using. These instructions are adapted from the [`sf` package's `README`](https://github.com/r-spatial/sf).
+> Steps for installing the geospatial will vary based on which form of Linux you are using. These instructions are adapted from the [sf package's README](https://github.com/r-spatial/sf).
 >
 > For **Ubuntu**:
 >
@@ -242,15 +242,15 @@ You are now ready for the workshop!
 
 ## Option B: Docker
 
-[Docker](https://www.docker.com) provides developers with a means for creating interactive [containers](https://docs.docker.com/glossary/?term=container) that contain pre-installed software. A selection of pre-installed software in Docker is called an [image](https://docs.docker.com/glossary/?term=image). An image can be downloaded and used to create a local container, allowing end-users to get software up and running quickly. This is particularly useful when a local installation of the software could be complex and time consuming. For `R` users, a Docker image can be used to create a virtual installation of `R` and RStudio that can be run through your web browser.
+[Docker](https://www.docker.com) provides developers with a means for creating interactive [containers](https://docs.docker.com/glossary/?term=container) that contain pre-installed software. A selection of pre-installed software in Docker is called an [image](https://docs.docker.com/glossary/?term=image). An image can be downloaded and used to create a local container, allowing end-users to get software up and running quickly. This is particularly useful when a local installation of the software could be complex and time consuming. For R users, a Docker image can be used to create a virtual installation of R and RStudio that can be run through your web browser.
 
-This option involves downloading an Docker image that contains an installation of `R`, RStudio Server, all of the necessary dependencies listed above, and almost all of the `R` packages used in the geospatial lessons. You will need to install the appropriate version of Docker's Community Edition software and then download and use the `rocker/geospatial` Docker image to create a container that will allow you to use `R`, RStudio, and all the required GIS tools without installing any of them locally.
+This option involves downloading an Docker image that contains an installation of R, RStudio Server, all of the necessary dependencies listed above, and almost all of the R packages used in the geospatial lessons. You will need to install the appropriate version of Docker's Community Edition software and then download and use the `rocker/geospatial` Docker image to create a container that will allow you to use R, RStudio, and all the required GIS tools without installing any of them locally.
 
 Once up and running - you'll have full access to RStudio right from your browser:
 
 ![](/fig/docker.png)
 
-Please be aware that the `R` package `rasterVis` is not included in the `rocker/geospatial` Docker image. If your instructor teaches with this package then you will need to install this `R` package yourself. All other `R` packages will already be installed for you.
+Please be aware that the R package `rasterVis` is not included in the `rocker/geospatial` Docker image. If your instructor teaches with this package then you will need to install this R package yourself. All other R packages will already be installed for you.
 
 > ## Downloading and Installing Docker Community Edition
 >
@@ -265,7 +265,7 @@ Please be aware that the `R` package `rasterVis` is not included in the `rocker/
 > ## Using the `rocker/geospatial` Docker Image via the Command Line
 >
 > #### Download and Set-up
-> Once Docker is installed and up and running, you will need to open your computer's command line terminal. We'll use the terminal to download [`rocker/geospatial`](https://github.com/rocker-org/geospatial), a pre-made Docker image that contains an installation of `R`, RStudio Server, all of the necessary dependencies, and all but one of the `R` packages needed for this workshop.
+> Once Docker is installed and up and running, you will need to open your computer's command line terminal. We'll use the terminal to download [`rocker/geospatial`](https://github.com/rocker-org/geospatial), a pre-made Docker image that contains an installation of R, RStudio Server, all of the necessary dependencies, and all but one of the R packages needed for this workshop.
 >
 > You need to have already installed Docker Community Edition (see instructions above) before proceeding. Once you have Docker downloaded and installed, make sure Docker is running and then enter the following command into the terminal to download the `rocker/geospatial` image:
 >
