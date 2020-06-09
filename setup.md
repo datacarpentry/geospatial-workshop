@@ -45,13 +45,13 @@ Participants who do not already have R installed should download and install it.
 
 > ## Windows
 >
->To install R, Windows users should select "Download R for Windows" from RStudio and CRAN's [cloud download page](https://cloud.r-project.org), which will automatically detect a CRAN mirror for you to use. Select the `base` subdirectory after choosing the Windows download page. A `.exe` executable file containing the necessary components of base R can be downloaded by clicking on "Download R 4.x.x for Windows".
+>To install R, Windows users should select "Download R for Windows" from the [CRAN download page](https://cloud.r-project.org), which will automatically detect a mirror for you to use. Select the `base` subdirectory after choosing the Windows download page. A `.exe` executable file containing the necessary components of base R can be downloaded by clicking on "Download R 4.x.x for Windows".
 >
 {: .solution}
 
 > ## macOS
 >
->To install R, macOS users should select "Download R for (Mac) OS X" from RStudio and CRAN's [cloud download page](https://cloud.r-project.org), which will automatically detect a CRAN mirror for you to use. A `.pkg` file containing the necessary components of base R can be downloaded by clicking on the first available link (this will be the most recent), which will read `R-3.x.x.pkg`.
+>To install R, macOS users should select "Download R for (Mac) OS X" from the [CRAN download page](https://cloud.r-project.org), which will automatically detect a mirror for you to use. A `.pkg` file containing the necessary components of base R can be downloaded by clicking on the first available link (this will be the most recent), which will read `R-3.x.x.pkg`.
 >
 {: .solution}
 
@@ -59,7 +59,7 @@ Participants who do not already have R installed should download and install it.
 >
 >Most Linux users can install R using the package management software on their computer. R is a part of many linux distributions.
 >
->To install R, Linux users should select "Download R for Linux" from RStudio and CRAN's [cloud download page](https://cloud.r-project.org), which will automatically detect a CRAN mirror for you to use. Instructions for a number of different Linux operating systems are available.
+>To install R, Linux users should select "Download R for Linux" from the [CRAN download page](https://cloud.r-project.org), which will automatically detect a mirror for you to use. Instructions for a number of different Linux operating systems are available.
 >
 {: .solution}
 
