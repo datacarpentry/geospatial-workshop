@@ -7,6 +7,10 @@
 This is a variant of the [Geospatial Data Carpentry Workshop](https://datacarpentry.org/geospatial-workshop/)
 created at UW-Madison as part of video workshop series.
 
+## Contribution
+
+Please make your changes in the `master` branch and see [the contributing page](https://github.com/UW-Madison-DataScience/geospatial-workshop/blob/master/CONTRIBUTING.md) for more information.
+
 ## Code of Conduct
 
 All participants should agree to abide by the [Data Carpentry Code of Conduct](http://www.datacarpentry.org/code-of-conduct/).
