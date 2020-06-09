@@ -45,21 +45,27 @@ Participants who do not already have R installed should download and install it.
 
 > ## Windows
 >
->To install R, Windows users should select "Download R for Windows" from the [CRAN download page](https://cloud.r-project.org), which will automatically detect a mirror for you to use. Select the `base` subdirectory after choosing the Windows download page. A `.exe` executable file containing the necessary components of base R can be downloaded by clicking on "Download R 4.x.x for Windows".
+>To install R, Windows users should navigate to the [CRAN download page](https://cloud.r-project.org) and click `Download R for Windows`. Click the `base` subdirectory. This page has a download link as well as links to instructions and frequently asked questions should you have any problems.
+>
+>Clicking on `Download R 4.x.x for Windows` will download a `.exe` executable installer. The Installer will guide you through the reamining steps.
 >
 {: .solution}
 
 > ## macOS
 >
->To install R, macOS users should select "Download R for (Mac) OS X" from the [CRAN download page](https://cloud.r-project.org), which will automatically detect a mirror for you to use. A `.pkg` file containing the necessary components of base R can be downloaded by clicking on the first available link (this will be the most recent), which will read `R-3.x.x.pkg`.
+>To install R, macOS users should navigate to the [CRAN download page](https://cloud.r-project.org) and click `Download R for (Mac) OS X`. 
+>
+>A `.pkg` file containing the necessary components of base R can be downloaded by clicking on the first available link (this will be the most recent), which will read `R-4.x.x.pkg`.
+>
+>When the file is download it, double click it to run the installer. The Installer will guide you through the remaining steps.
 >
 {: .solution}
 
 > ## Linux
 >
->Most Linux users can install R using the package management software on their computer. R is a part of many linux distributions.
+>Most Linux users can install R using the package management software on their computer. R is a part of many linux distributions and may already be installed.
 >
->To install R, Linux users should select "Download R for Linux" from the [CRAN download page](https://cloud.r-project.org), which will automatically detect a mirror for you to use. Instructions for a number of different Linux operating systems are available.
+>Linux users can also click "Download R for Linux" from the [CRAN download page](https://cloud.r-project.org). Instructions for a number of different Linux distributions are available.
 >
 {: .solution}
 
