@@ -7,13 +7,7 @@ title: Setup
 
 This workshop is designed to be run on your own computer. First, you need to download the data we use in the workshop. Then, you need to set up your computer by installing the software needed to analyze and process geospatial data.
 
-We provide two setup options:
-
-### Option A: Install manually for your operating system
-Install software by following the instructions below specific to the operating system you are using. Instructions are provided for Windows, macOS, and Linux.
-
-### Option B: Use a Docker image
-Workshop participants can download a Docker image containing all the software and dependencies needed.
+Option A will be the best choice for the majority of workshop participants using Windows, macOS, or Linux. Option B is an advanced alternative for Docker users.
 
 ## Data
 
@@ -26,17 +20,17 @@ For a full description of the data used in this workshop see the [data page](dat
 
 ## Option A: Local Installation
 
-### Software
+The table below summarizes all the software that must be installed for the workshop. Below the table we provide detailed instructions for installing each software for Windows, macOS, and Linux.
 
-We provide detailed instructions for installing the software needed for this workshop. At points, the instructions assume some familiarity with the software installation process. As there are many different operating systems and environments, the instructions may not work on your computer.  If an installation doesn't work for you, please refer to the installation instructions for that software listed in the table below. Most  participants will not need to install these software individually.
+At points, the instructions assume some familiarity with the software installation process. As there are many different operating systems and environments, the installation on your computer may vary from the instructions.
 
 | Software | Description | Install | Manual | Available for |
 | -------- | ------------ | ------ | ------------- | ----------- |
+| [R](https://www.r-project.org) | Software environment for statistical and scientific computing | [Link](https://cloud.r-project.org) | [Link](https://cloud.r-project.org) | Windows, macOS, Linux |
+| [RStudio](https://www.rstudio.com) | GUI for R | [Link](https://www.rstudio.com/products/rstudio/download/#download) | | Windows, macOS, Linux |
 | [GDAL](http://www.gdal.org) | Geospatial model for reading and writing a variety of formats | [Link](https://gdal.org/download.html) | [Link](https://gdal.org) | Windows, macOS, Linux |
 | [GEOS](https://trac.osgeo.org/geos) | Geometry models and operations | [Link](https://trac.osgeo.org/geos) | [Link](http://geos.osgeo.org/doxygen/) | Windows, macOS, Linux |
 | [PROJ.4](http://proj4.org) | Coordinate reference system transformations | [Link](http://proj4.org/install.html)| [Link](http://proj4.org/index.html)| Windows, macOS, Linux |
-| [R](https://www.r-project.org) | Software environment for statistical and scientific computing | [Link](https://cloud.r-project.org) | [Link](https://cloud.r-project.org) | Windows, macOS, Linux |
-| [RStudio](https://www.rstudio.com) | GUI for R | [Link](https://www.rstudio.com/products/rstudio/download/#download) | | Windows, macOS, Linux |
 | [UDUNITS](https://www.unidata.ucar.edu/software/udunits/) |Unit conversions | [Link](https://www.unidata.ucar.edu/downloads/udunits/index.jsp) | [Link](https://www.unidata.ucar.edu/software/udunits/#documentation) | Windows, macOS, Linux | 
 
 ### R
@@ -70,7 +64,7 @@ Participants who do not already have R installed should download and install it.
 {: .solution}
 
 ### RStudio
-RStudio is a GUI for using R that is available for Windows, macOS, and  Linux operating systems. 
+RStudio is a GUI for using R that is available for Windows, macOS, and  Linux operating systems. Participants who do not already have R installed should download and install it.
 
 > ## Windows
 >
@@ -246,7 +240,9 @@ Linux users will have to install UDUNITS separately. Like the geospatial librari
 
 You are now ready for the workshop!
 
-## Option B: Docker
+## Option B: Docker (advanced)
+
+Use this advanced option only if you are familiar with Docker and using Docker Images. If you are having trouble with option A, please contact the workshop organizers.
 
 [Docker](https://www.docker.com) provides developers with a means for creating interactive [containers](https://docs.docker.com/glossary/?term=container) that contain pre-installed software. A selection of pre-installed software in Docker is called an [image](https://docs.docker.com/glossary/?term=image). An image can be downloaded and used to create a local container, allowing end-users to get software up and running quickly. This is particularly useful when a local installation of the software could be complex and time consuming. For R users, a Docker image can be used to create a virtual installation of R and RStudio that can be run through your web browser.
 
