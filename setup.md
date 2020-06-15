@@ -26,7 +26,7 @@ At points, the instructions assume some familiarity with the software installati
 
 | Software | Description | Install | Manual | Available for |
 | -------- | ------------ | ------ | ------------- | ----------- |
-| [R](https://www.r-project.org) | Software environment for statistical and scientific computing | [Link](https://cloud.r-project.org) | [Link](https://cloud.r-project.org) | Windows, macOS, Linux |
+| [R](https://www.r-project.org) | Software environment for statistical and scientific computing | [Link](#r) | [Link](https://cloud.r-project.org) | Windows, macOS, Linux |
 | [RStudio](https://www.rstudio.com) | GUI for R | [Link](https://www.rstudio.com/products/rstudio/download/#download) | | Windows, macOS, Linux |
 | [GDAL](http://www.gdal.org) | Geospatial model for reading and writing a variety of formats | [Link](https://gdal.org/download.html) | [Link](https://gdal.org) | Windows, macOS, Linux |
 | [GEOS](https://trac.osgeo.org/geos) | Geometry models and operations | [Link](https://trac.osgeo.org/geos) | [Link](http://geos.osgeo.org/doxygen/) | Windows, macOS, Linux |
