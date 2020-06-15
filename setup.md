@@ -26,8 +26,8 @@ At points, the instructions assume some familiarity with the software installati
 
 | Install | Description | Website | Available for |
 | -------- | ------------ | ------ | ------------- | ----------- |
-| [R](#r) | Software environment for statistical and scientific computing | [Link](https://www.r-project.org) | Windows, macOS, Linux |
-| [RStudio](#rstudio) | GUI for R | [Link](https://www.rstudio.com) | Windows, macOS, Linux |
+| [R](#r) | free software environment for statistical computing and graphics. | [Link](https://www.r-project.org) | Windows, macOS, Linux |
+| [RStudio](#rstudio) | free integrated development environment (IDE) for the R programming language | [Link](https://www.rstudio.com) | Windows, macOS, Linux |
 | [GDAL](#gdal-geos-and-proj4) | Geospatial model for reading and writing a variety of formats | [Link](http://www.gdal.org) | Windows, macOS, Linux |
 | [GEOS](#gdal-geos-and-proj4) | Geometry models and operations | [Link](https://trac.osgeo.org/geos)  | Windows, macOS, Linux |
 | [PROJ.4](#gdal-geos-and-proj4) | Coordinate reference system transformations | [Link](http://proj4.org)| Windows, macOS, Linux |
