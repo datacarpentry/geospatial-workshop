@@ -7,31 +7,31 @@ title: Setup
 
 This workshop is designed to be run on your own computer. First, you need to download the data we use in the workshop. Then, you need to set up your computer by installing the software needed to analyze and process geospatial data.
 
-Option A will be the best choice for the majority of workshop participants using Windows, macOS, or Linux. Option B is an advanced alternative for Docker users.
+Workshop participants who use Docker and wish to use a Docker image made for the workshop will find [advanced Docker installation](#docker-installation-advanced) instructions below.
 
 ## Data
 
 You can download all of the data used in this workshop by clicking
-[this download link](https://ndownloader.figshare.com/articles/2009586/versions/10). The file is 218.2 MB.
+[this download link](). The file is 218.2 MB.
 
 The data will download as a single compressed (`.zip`) file. Expanding this file will depend on your operating system.
 
 For a full description of the data used in this workshop see the [data page](data).
 
-## Option A: Local Installation
+## Software Installation
 
 The table below summarizes all the software that must be installed for the workshop. Below the table we provide detailed instructions for installing each software for Windows, macOS, and Linux.
 
 At points, the instructions assume some familiarity with the software installation process. As there are many different operating systems and environments, the installation on your computer may vary from the instructions.
 
-| Software | Description | Install | Manual | Available for |
+| Install | Description | Website | Available for |
 | -------- | ------------ | ------ | ------------- | ----------- |
-| [R](https://www.r-project.org) | Software environment for statistical and scientific computing | [Link](#r) | [Link](https://cloud.r-project.org) | Windows, macOS, Linux |
-| [RStudio](https://www.rstudio.com) | GUI for R | [Link](https://www.rstudio.com/products/rstudio/download/#download) | | Windows, macOS, Linux |
-| [GDAL](http://www.gdal.org) | Geospatial model for reading and writing a variety of formats | [Link](https://gdal.org/download.html) | [Link](https://gdal.org) | Windows, macOS, Linux |
-| [GEOS](https://trac.osgeo.org/geos) | Geometry models and operations | [Link](https://trac.osgeo.org/geos) | [Link](http://geos.osgeo.org/doxygen/) | Windows, macOS, Linux |
-| [PROJ.4](http://proj4.org) | Coordinate reference system transformations | [Link](http://proj4.org/install.html)| [Link](http://proj4.org/index.html)| Windows, macOS, Linux |
-| [UDUNITS](https://www.unidata.ucar.edu/software/udunits/) |Unit conversions | [Link](https://www.unidata.ucar.edu/downloads/udunits/index.jsp) | [Link](https://www.unidata.ucar.edu/software/udunits/#documentation) | Windows, macOS, Linux | 
+| [R](#r) | Software environment for statistical and scientific computing | [Link](https://www.r-project.org) | Windows, macOS, Linux |
+| [RStudio](#rstudio) | GUI for R | [Link](https://www.rstudio.com) | Windows, macOS, Linux |
+| [GDAL](#gdal-geos-and-proj4) | Geospatial model for reading and writing a variety of formats | [Link](http://www.gdal.org) | Windows, macOS, Linux |
+| [GEOS](#gdal-geos-and-proj4) | Geometry models and operations | [Link](https://trac.osgeo.org/geos)  | Windows, macOS, Linux |
+| [PROJ.4](#gdal-geos-and-proj4) | Coordinate reference system transformations | [Link](http://proj4.org)| Windows, macOS, Linux |
+| [UDUNITS](#udunits) |Unit conversions | [Link](https://www.unidata.ucar.edu/software/udunits/) | Windows, macOS, Linux | 
 
 ### R
 
@@ -240,7 +240,7 @@ Linux users will have to install UDUNITS separately. Like the geospatial librari
 
 You are now ready for the workshop!
 
-## Option B: Docker (advanced)
+## Docker Installation (Advanced)
 
 Use this advanced option only if you are familiar with Docker and using Docker Images. If you are having trouble with option A, please contact the workshop organizers.
 
