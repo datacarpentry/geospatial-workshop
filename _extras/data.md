@@ -3,13 +3,15 @@ layout: page
 title: "Workshop data"
 ---
 
-## NEON Spatio-temporal Teaching Data Subset
+## Geospatial Data Carpentry Workshop Data Subset
 
 Available on FigShare: 
-[NEON Spatio-temporal Teaching Data Subset](https://figshare.com/articles/Spatio_temporal_Series_Teaching_Data_Subsets/2009586).
+[Geospatial Data Carpentry Workshop Data Subset](https://figshare.com/articles/Geospatial_Data_Carpentry_Workshop_Data_Subset/12473486).
 
 **CITATION:** Data Skills Teaching Data Subsets, NEON; Wasser, Leah; Jones, Megan A. (2016): 
 NEON Spatio-temporal Teaching Data Subset. figshare. Fileset. https://doi.org/10.6084/m9.figshare.2009586.v10 
+
+Please note that the data provided here are a subset of the original Data Skills Teaching Data Subsets created by NEON, Leah Wasser, and Megan Jones. The original teaching data subset can be downloaded from the link provided in the citation.
 
 The data and lessons in this workshop were originally developed through a hackathon funded by the [National Ecological Observatory Network (NEON)](https://www.neonscience.org/) - an NSF funded observatory in Boulder, Colorado - in collaboration with Data Carpentry, SESYNC and CYVERSE. NEON is collecting data for 30 years to help scientists understand
 how our aquatic and terrestrial ecosystems are changing. The data used in these lessons cover two NEON field sites:
