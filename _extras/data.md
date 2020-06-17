@@ -3,34 +3,33 @@ layout: page
 title: "Workshop data"
 ---
 
-## NEON Spatio-temporal Teaching Data Subset
+## Geospatial Data Carpentry Workshop Data Subset
 
 Available on FigShare: 
-[NEON Spatio-temporal Teaching Data Subset](https://figshare.com/articles/Spatio_temporal_Series_Teaching_Data_Subsets/2009586).
+[Geospatial Data Carpentry Workshop Data Subset](https://figshare.com/articles/Geospatial_Data_Carpentry_Workshop_Data_Subset/12473486).
 
 **CITATION:** Data Skills Teaching Data Subsets, NEON; Wasser, Leah; Jones, Megan A. (2016): 
 NEON Spatio-temporal Teaching Data Subset. figshare. Fileset. https://doi.org/10.6084/m9.figshare.2009586.v10 
+
+Please note that the data provided here are a subset of the original Data Skills Teaching Data Subsets created by NEON, Leah Wasser, and Megan Jones. The original teaching data subset can be downloaded from the link provided in the citation.
 
 The data and lessons in this workshop were originally developed through a hackathon funded by the [National Ecological Observatory Network (NEON)](https://www.neonscience.org/) - an NSF funded observatory in Boulder, Colorado - in collaboration with Data Carpentry, SESYNC and CYVERSE. NEON is collecting data for 30 years to help scientists understand
 how our aquatic and terrestrial ecosystems are changing. The data used in these lessons cover two NEON field sites:
 * Harvard Forest (HARV) - Massachusetts, USA - [fieldsite description](https://www.neonscience.org/field-sites/field-sites-map/HARV)
 * San Joaquin Experimental Range (SJER) - California, USA - [fieldsite description](https://www.neonscience.org/field-sites/field-sites-map/SJER)
  
-You can download all of the data used in this workshop by clicking 
-[this download link](https://ndownloader.figshare.com/articles/2009586/versions/10). 
-Clicking the download link will automatically download all of the files to your default download directory as a single compressed
-(`.zip`) file. To expand this file, double click the folder icon in your file navigator application (for Macs, this is the Finder 
-application).
- 
-These data files represent teaching version of the data, with sufficient complexity to teach many aspects of  data analysis and 
-management, but with many complexities removed to allow students to focus on the core ideas and skills being taught.  
- 
- | Dataset | File name | Description |
- | ---- | ------| ---- | 
- | Site layout shapefiles | NEON-DS-Site-Layout-Files.zip | A set of shapefiles for the NEON's Harvard Forest field site and US and (some) state boundary layers. | 
- | Meteorological data |  NEON-DS-Met-Time-Series.zip | Precipitation, temperature and other variables collected from a flux tower at the NEON Harvard Forest site
- | Airborne remote sensing data | NEON-DS-Airborne-RemoteSensing.zip | LiDAR data collected by the NEON Airborne Observation Platform (AOP) and processed at NEON including a canopy height model, digital elevation model and digital surface model for NEON's Harvard Forest and San Joaquin Experimental Range field sites. | 
- | Landstat 7 NDVI raster data | NEON-DS-Landsat-NDVI.zip | 2011 NDVI data product derived from Landsat 7 and processed by USGS cropped to NEON's Harvard Forest and San Joaquin Experimental Range field sites | 
+The data for this workshop are available [on Figshare](https://figshare.com/articles/Geospatial_Data_Carpentry_Workshop_Data_Subset/12473486) under a CC-BY license. This is a reduced subset of the original data publication by Wasser and Jones (2016). You can download all of the data used in this workshop by clicking [this download link](https://ndownloader.figshare.com/files/23104040).
+
+Clicking the download link will download all of the files as a single compressed (`.zip`) file. To expand this file, double click the folder icon in your file navigator application (for Macs, this is the Finder application).
+
+These data files represent teaching version of the data, with sufficient complexity to teach many aspects of  data analysis and management, but with many complexities removed to allow students to focus on the core ideas and skills being taught.
+
+| Dataset | Folder or file name | Description |
+| ---- | ------| ---- |
+| Site layout shapefiles | "vector" folder | A set of shapefiles for the NEON's Harvard Forest field site and US and (some) state boundary layers. |
+| Airborne remote sensing data | "raster" folder | LiDAR data collected by the NEON Airborne Observation Platform (AOP) and processed at NEON including a canopy height model, digital elevation model and digital surface model for NEON's Harvard Forest and San Joaquin Experimental Range field sites. |
+| Point locations of field plots | .csv files | Two files that contain geographic coordinates of plot locations in the Harvard Forest field sites |
+
 
 ### About the Site Layout Shapefiles
 These vector data provide information on the site characterization and infrastructure at the 
@@ -38,12 +37,6 @@ These vector data provide information on the site characterization and infrastru
 [Harvard Forest](https://www.neonscience.org/field-sites/field-sites-map/HARV) field site. 
 The Harvard Forest shapefiles are from the [Harvard Forest GIS & Map](http://harvardforest.fas.harvard.edu/gis-maps/) archives. 
 US Country and State Boundary layers are from the [US Census Bureau](https://www.census.gov/geo/maps-data/data/tiger-cart-boundary.html).
-
-### About the Meteorological Data
-The data used in this lesson were collected at the [National Ecological Observatory Network's](https://www.neonscience.org/) 
-[Harvard Forest](https://www.neonscience.org/field-sites/field-sites-map/HARV). These data are proxy data for what will be available 
-for 30 years on the [NEON data portal](http://data.neonscience.org/home) for the Harvard Forest and other field sites located across
-the United States.
 
 ### About the Airborne Remote Sensing Data
 This data was collected at the [National Ecological Observatory Network's](https://www.neonscience.org/) 
@@ -62,12 +55,3 @@ and
 
 Additional information about airborne remote sensing data, including other data types for these and other sites can
 be found on [NEON’s Airborne Data](https://www.neonscience.org/data-collection/airborne-remote-sensing) page.
-
-### About the Landstat 7 NDVI Raster Data
-The imagery data used to create this raster teaching data subset were collected over the 
-[National Ecological Observatory Network's](https://www.neonscience.org/) 
-[Harvard Forest](https://www.neonscience.org/field-sites/field-sites-map/HARV) 
-and [San Joaquin Experimental Range](https://www.neonscience.org/field-sites/field-sites-map/SJER) field sites. 
-The imagery was created by the U.S. Geological Survey (USGS) using a 
-[multispectral scanner](http://eros.usgs.gov/#/Find_Data/Products_and_Data_Available/MSS) on a 
-[Landsat Satellite](http://landsat.usgs.gov/). The data files are Geographic Tagged Image-File Format (GeoTIFF).
