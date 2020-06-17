@@ -12,7 +12,7 @@ Workshop participants who use Docker and wish to use a Docker image made for the
 ## Data
 
 You can download all of the data used in this workshop by clicking
-[this download link](). The file is 218.2 MB.
+[this download link](https://ndownloader.figshare.com/files/23104040). The file is 58 MB.
 
 The data will download as a single compressed (`.zip`) file. Expanding this file will depend on your operating system.
 
