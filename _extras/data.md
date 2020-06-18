@@ -18,7 +18,7 @@ how our aquatic and terrestrial ecosystems are changing. The data used in these 
 * Harvard Forest (HARV) - Massachusetts, USA - [fieldsite description](https://www.neonscience.org/field-sites/field-sites-map/HARV)
 * San Joaquin Experimental Range (SJER) - California, USA - [fieldsite description](https://www.neonscience.org/field-sites/field-sites-map/SJER)
  
-The data for this workshop are available [on Figshare](https://figshare.com/articles/Geospatial_Data_Carpentry_Workshop_Data_Subset/12473486) under a CC-BY license. This is a reduced subset of the original data publication by Wasser and Jones (2016). You can download all of the data used in this workshop by clicking [this download link](https://ndownloader.figshare.com/files/23104040).
+The data for this workshop are available [on Figshare](https://figshare.com/articles/Geospatial_Data_Carpentry_Workshop_Data_Subset/12473486) under a CC-BY license. This is a reduced subset of the original data publication by Wasser and Jones (2016). You can download all of the data used in this workshop by clicking [this download link](https://ndownloader.figshare.com/files/23135981).
 
 Clicking the download link will download all of the files as a single compressed (`.zip`) file. To expand this file, double click the folder icon in your file navigator application (for Macs, this is the Finder application).
 
