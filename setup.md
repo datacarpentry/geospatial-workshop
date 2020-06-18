@@ -107,57 +107,6 @@ Download the executable (`.exe`) installer by clicking the button labeled `Downl
 >
 {: .solution}
 
-### R Packages
-
-**R Packages** are collections of functions and reproducible code.
-The  packages here will be used in the worshop and must be installed:
-
-* [dplyr](https://cran.r-project.org/package=dplyr)
-* [ggplot2](https://cran.r-project.org/package=ggplot2)
-* [raster](https://cran.r-project.org/package=raster)
-* [rgdal](https://cran.r-project.org/package=rgdal)
-* [rasterVis](https://cran.r-project.org/package=rasterVis)
-* [remotes](https://cran.r-project.org/package=remotes)
-* [sf](https://cran.r-project.org/package=sf)
-
-To install these packages in RStudio:  
-
-1\. Open RStudio by double-clicking the RStudio application icon. 
-You should see something like this:
-
-![RStudio layout](/fig/01-rstudio.png)
-
-
-2\. Type the following text into the console and hit <kbd>Return/Enter</kbd>.
-
-~~~
-install.packages(c("dplyr", "ggplot2", "raster", "rgdal", "rasterVis", "sf"))
-~~~
-{: .language-r}
-
-You should see a status message starting with:
-
-~~~
-trying URL 'https://cran.rstudio.com/bin/macosx/el-capitan/contrib/3.5/dplyr_0.7.6.tgz'
-Content type 'application/x-gzip' length 5686536 bytes (5.4 MB)
-==================================================
-downloaded 5.4 MB
-
-trying URL 'https://cran.rstudio.com/bin/macosx/el-capitan/contrib/3.5/ggplot2_3.0.0.tgz'
-Content type 'application/x-gzip' length 3577658 bytes (3.4 MB)
-==================================================
-downloaded 3.4 MB
-~~~
-{: .output}
-
-When the installation is complete, you will see a status message like:
-
-~~~
-The downloaded binary packages are in
-/var/folders/7g/r8_n81y534z0vy5hxc6dx1t00000gn/T//RtmpJECKXM/downloaded_packages
-~~~
-{: .output}
-
 ### GDAL, GEOS, and PROJ.4
 
 The installation of the geospatial libraries GDAL, GEOS, and PROJ.4 
@@ -285,6 +234,57 @@ These instructions are adapted from the [sf package's README](https://github.com
 >{: .language-bash}
 >
 {: .solution}
+
+### R Packages
+
+**R Packages** are collections of functions and reproducible code.
+The  packages here will be used in the worshop and must be installed:
+
+* [dplyr](https://cran.r-project.org/package=dplyr)
+* [ggplot2](https://cran.r-project.org/package=ggplot2)
+* [raster](https://cran.r-project.org/package=raster)
+* [rgdal](https://cran.r-project.org/package=rgdal)
+* [rasterVis](https://cran.r-project.org/package=rasterVis)
+* [remotes](https://cran.r-project.org/package=remotes)
+* [sf](https://cran.r-project.org/package=sf)
+
+To install these packages in RStudio:  
+
+1\. Open RStudio by double-clicking the RStudio application icon. 
+You should see something like this:
+
+![RStudio layout](/fig/01-rstudio.png)
+
+
+2\. Type the following text into the console and hit <kbd>Return/Enter</kbd>.
+
+~~~
+install.packages(c("dplyr", "ggplot2", "raster", "rgdal", "rasterVis", "sf"))
+~~~
+{: .language-r}
+
+You should see a status message starting with:
+
+~~~
+trying URL 'https://cran.rstudio.com/bin/macosx/el-capitan/contrib/3.5/dplyr_0.7.6.tgz'
+Content type 'application/x-gzip' length 5686536 bytes (5.4 MB)
+==================================================
+downloaded 5.4 MB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/el-capitan/contrib/3.5/ggplot2_3.0.0.tgz'
+Content type 'application/x-gzip' length 3577658 bytes (3.4 MB)
+==================================================
+downloaded 3.4 MB
+~~~
+{: .output}
+
+When the installation is complete, you will see a status message like:
+
+~~~
+The downloaded binary packages are in
+/var/folders/7g/r8_n81y534z0vy5hxc6dx1t00000gn/T//RtmpJECKXM/downloaded_packages
+~~~
+{: .output}
 
 You are now ready for the workshop!
 
