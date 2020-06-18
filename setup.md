@@ -116,11 +116,9 @@ the R package that we will be using for spatial data operations throughout this 
 
 > ## Windows
 >
->To install the geospatial libraries, install the latest version [Rtools](https://cran.r-project.org/bin/windows/Rtools/)
->
 >Windows users should install the latest version of `Rtools`.
 >
->Navigate to the CRAN page for Rtools and download the appropriate `.exe` executable installer.
+>Navigate to the [CRAN page](https://cran.r-project.org/bin/windows/Rtools/) for Rtools and download the appropriate `.exe` executable installer.
 >
 >Follow the instructions on the page to add Rtools to your *PATH*.
 >
