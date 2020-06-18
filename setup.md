@@ -180,22 +180,22 @@ the R package that we will be using for spatial data operations throughout this 
 > ## macOS - Install with Packages (Beginner)
 >
 > The simplest way to install these geospatial libraries is to install the latest version of 
-[Kyng Chaos's pre-built package](http://www.kyngchaos.com/software/frameworks) for GDAL Complete. 
-Be aware that several other libraries are also installed, 
-including the UnixImageIO, SQLite3, and NumPy.
+>[Kyng Chaos's pre-built package](http://www.kyngchaos.com/software/frameworks) for GDAL Complete. 
+>Be aware that several other libraries are also installed, 
+>including the UnixImageIO, SQLite3, and NumPy.
 >
 > After downloading the package in the link above, 
-you will need to double-click the cardbord box icon to complete the installation. 
-Depending on your security settings, you may get an error message about "unidentified developers". 
-You can enable the installation by following [these instructions](https://kb.wisc.edu/page.php?id=25443) for 
-installing programs from unidentified developers.
+>you will need to double-click the cardbord box icon to complete the installation. 
+>Depending on your security settings, you may get an error message about "unidentified developers". 
+>You can enable the installation by following [these instructions](https://kb.wisc.edu/page.php?id=25443) for 
+>installing programs from unidentified developers.
 >
 {: .solution}
 
 > ## macOS - Install with Homebrew (Advanced)
 >
 > Alternatively, participants who are comfortable with the command line can install the geospatial libraries individually 
-using [homebrew](https://brew.sh):
+>using [homebrew](https://brew.sh):
 >
 >~~~
 >$ brew tap osgeo/osgeo4mac && brew tap --repair
