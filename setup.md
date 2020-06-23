@@ -248,7 +248,7 @@ The  packages here will be used in the worshop and must be installed:
 
 To install these packages in RStudio:  
 
-1\. Open RStudio by double-clicking the RStudio application icon. 
+1\. Open RStudio. 
 You should see something like this:
 
 ![RStudio layout](/fig/01-rstudio.png)
