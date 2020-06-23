@@ -69,7 +69,8 @@ Click  the `base` subdirectory.
 >
 >A `.pkg` file containing the necessary components of base R can be downloaded by clicking on the first available link (this will be the most recent), which will read `R-4.x.x.pkg`.
 >
->When the file is download it, double click it to run the installer. The Installer will guide you through the remaining steps.
+>When the file finishes downloading, double click it to run the installer.
+> The installer will guide you through the remaining steps.
 >
 {: .solution}
 
