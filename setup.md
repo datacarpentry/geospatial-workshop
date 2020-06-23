@@ -10,7 +10,7 @@ First, you need to download the data we use in the workshop.
 Then, you need to set up your computer by installing the software needed to analyze and process geospatial data.
 
 Instructions are provided for installing all software 
-on Windows, maxOS, and Linux systems.
+on Windows, macOS, and Linux systems.
 
 Workshop participants who use Docker and wish to use a Docker image 
 made for the workshop will find 
