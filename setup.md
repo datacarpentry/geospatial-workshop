@@ -96,7 +96,9 @@ Download the executable (`.exe`) installer by clicking the button labeled `Downl
 
 > ## macOS
 >
->From the [RStudio download page](https://rstudio.com/products/rstudio/download/#download), download the disk image (`.dmg`) installer by clicking the button labeled Download RStudio for mac. Mount the disk image and drag to your applications directory.
+>From the [RStudio download page](https://rstudio.com/products/rstudio/download/#download),
+>download the disk image (`.dmg`) installer by clicking the button labeled `Download RStudio for mac`.
+>Mount the disk image and drag to your applications directory.
 >
 {: .solution}
 
