@@ -249,6 +249,10 @@ The  packages here will be used in the worshop and must be installed:
 * [remotes](https://cran.r-project.org/package=remotes)
 * [sf](https://cran.r-project.org/package=sf)
 
+macOS users may be prompted to install
+[Xcode Developer tools](https://apps.apple.com/us/app/xcode/id497799835?mt=12).
+Follow the prompt to install the Xcode or install it from the Mac App Store before continuing.
+
 To install these packages in RStudio:  
 
 1\. Open RStudio. 
