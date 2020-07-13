@@ -246,7 +246,6 @@ The  packages here will be used in the worshop and must be installed:
 * [raster](https://cran.r-project.org/package=raster)
 * [rgdal](https://cran.r-project.org/package=rgdal)
 * [rasterVis](https://cran.r-project.org/package=rasterVis)
-* [remotes](https://cran.r-project.org/package=remotes)
 * [sf](https://cran.r-project.org/package=sf)
 
 macOS users may be prompted to install
@@ -264,7 +263,7 @@ You should see something like this:
 2\. Type the following text into the console and hit <kbd>Return/Enter</kbd>.
 
 ~~~
-install.packages(c("dplyr", "ggplot2", "raster", "rgdal", "rasterVis", "remotes", "sf"))
+install.packages(c("dplyr", "ggplot2", "raster", "rgdal", "rasterVis", "sf"))
 ~~~
 {: .language-r}
 
