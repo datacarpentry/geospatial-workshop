@@ -264,7 +264,7 @@ You should see something like this:
 2\. Type the following text into the console and hit <kbd>Return/Enter</kbd>.
 
 ~~~
-install.packages(c("dplyr", "ggplot2", "raster", "rgdal", "rasterVis", "sf"))
+install.packages(c("dplyr", "ggplot2", "raster", "rgdal", "rasterVis", "remotes", "sf"))
 ~~~
 {: .language-r}
 
