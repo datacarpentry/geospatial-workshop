@@ -7,74 +7,103 @@
 <div class="syllabus">
   <h2 id="schedule">Schedule</h2>
 
-  {% assign lesson_number = 0 %}
-  {% assign day = 0 %}
-  {% assign multiday = false %}
-  {% for episode in site.episodes %}
-    {% if episode.start %}{% assign multiday = true %}{% break %}{% endif %}
-  {% endfor %}
-  {% assign current = site.start_time %}
-
-  <table class="table table-striped">
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
   <tr>
-    {% if multiday %}<td class="col-md-1"></td>{% endif %}
-    <td class="{% if multiday %}col-md-1{% else %}col-md-2{% endif %}"></td>
-    <td class="col-md-3"><a href="{{ relative_root_path }}{% link setup.md %}">Setup</a></td>
-    <td class="col-md-7">Download files required for the lesson</td>
+    <th class="tg-0pky"></th>
+    <th class="tg-0pky">Tasks</th>
+    <th class="tg-0pky">Approx time</th>
   </tr>
-  {% for episode in site.episodes %}
-    {% if episode.start %} {% comment %} Starting a new day? {% endcomment %}
-      {% assign day = day | plus: 1 %}
-      {% if day > 1 %} {% comment %} If about to start day 2 or later, show finishing time for previous day {% endcomment %}
-        {% assign hours = current | divided_by: 60 %}
-        {% assign minutes = current | modulo: 60 %}
-        <tr>
-          {% if multiday %}<td class="col-md-1"></td>{% endif %}
-          <td class="{% if multiday %}col-md-1{% else %}col-md-2{% endif %}">{% if hours < 10 %}0{% endif %}{{ hours }}:{% if minutes < 10 %}0{% endif %}{{ minutes }}</td>
-          <td class="col-md-3">Finish</td>
-          <td class="col-md-7"></td>
-        </tr>
-      {% endif %}
-      {% assign current = site.start_time %} {% comment %}Re-set start time of this episode to general daily start time {% endcomment %}
-    {% endif %}
-    {% assign hours = current | divided_by: 60 %}
-    {% assign minutes = current | modulo: 60 %}
-    <tr>
-      {% if multiday %}<td class="col-md-1">{% if episode.start %}Day {{ day }}{% endif %}</td>{% endif %}
-      <td class="{% if multiday %}col-md-1{% else %}col-md-2{% endif %}">{% if hours < 10 %}0{% endif %}{{ hours }}:{% if minutes < 10 %}0{% endif %}{{ minutes }}</td>
-      <td class="col-md-3">
-        {% assign lesson_number = lesson_number | plus: 1 %}
-	{{ lesson_number }}. <a href="{{ relative_root_path }}{{ episode.url }}">{{ episode.title }}</a>
-      </td>
-      <td class="col-md-7">
-        {% if episode.break %}
-          Break
-        {% else %}
-          {% if episode.questions %}
-            {% for question in episode.questions %}
-              {{question|markdownify|strip_html}}
-              {% unless forloop.last %}
-              <br/>
-              {% endunless %}
-            {% endfor %}
-          {% endif %}
-        {% endif %}
-      </td>
-    </tr>
-    {% assign current = current | plus: episode.teaching | plus: episode.exercises | plus: episode.break %}
-  {% endfor %}
-  {% assign hours = current | divided_by: 60 %}
-  {% assign minutes = current | modulo: 60 %}
+</thead>
+<tbody>
   <tr>
-    {% if multiday %}<td class="col-md-1"></td>{% endif %}
-    <td class="{% if multiday %}col-md-1{% else %}col-md-2{% endif %}">{% if hours < 10 %}0{% endif %}{{ hours }}:{% if minutes < 10 %}0{% endif %}{{ minutes }}</td>
-    <td class="col-md-3">Finish</td>
-    <td class="col-md-7"></td>
+    <td class="tg-0pky">Pre-workshop</td>
+    <td class="tg-0pky"><span style="font-style:normal"> </span>
+    	<a href="https://uw-madison-datascience.github.io/geospatial-workshop/setup.html">Install software and download data</a><br><span style="font-style:normal">Watch the </span><a href="https://www.youtube.com/playlist?list=PL90vX4e9ORqfzAY5IngLRM8OeyBS2ZYU6">setup and intro videos</a></td>
+    <td class="tg-0pky">1.5 hr</td>
   </tr>
-  </table>
-
-  <p>
-    The actual schedule may vary slightly depending on the topics and exercises chosen by the instructor.
-  </p>
+  <tr>
+    <td class="tg-0pky">Day 1</td>
+    <td class="tg-0pky">Attend Discussion session</td>
+    <td class="tg-0pky">1 hr</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Day 2 Prep</td>
+    <td class="tg-0pky"><span style="font-style:normal">Watch episodes 1-3</span><br>
+    <ul>
+    	<li><a href="https://www.youtube.com/watch?v=gK33mzIV70k&list=PL90vX4e9ORqeGADdAEDcM88TOgfijTzIo&index=2&t=0s">Episode 1: Introduction to Raster Data in </a><span style="font-style:normal;text-decoration:underline;color:#15C">R</span> </li>
+    	<li><a href="https://www.youtube.com/watch?v=EBC2Dgldjkw&list=PL90vX4e9ORqeGADdAEDcM88TOgfijTzIo&index=3&t=0s">Episode 2: Plotting Raster Data in </a><span style="font-style:normal;text-decoration:underline;color:#15C">R</span> </li>
+    	<li><a href="https://www.youtube.com/watch?v=tAXIqffAjX8&list=PL90vX4e9ORqeGADdAEDcM88TOgfijTzIo&index=4&t=14s">Episode 3: Reprojecting Raster Data in R</a> </li>
+    	</ul>
+    <span style="font-style:normal">Fill in minute cards</span></td>
+    <td class="tg-0pky">2.5 hrs</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Day 2</td>
+    <td class="tg-0pky">Attend Discussion session</td>
+    <td class="tg-0pky">1 hr</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Day 3 Prep</td>
+    <td class="tg-0pky"><span style="font-style:normal">Watch episodes 4-5</span>
+    <ul>
+    	<li><a href="https://www.youtube.com/watch?v=Oa64cU12kNY&list=PL90vX4e9ORqeGADdAEDcM88TOgfijTzIo&index=5&t=1s">Episode 4: Raster Calculations in R</a><span style="font-style:normal;text-decoration:underline;color:#15C"> </span> </li>
+    	<li> <a href="https://www.youtube.com/watch?v=pjGTPeRzbcs&list=PL90vX4e9ORqeGADdAEDcM88TOgfijTzIo&index=5">Episode 5: Work With Multi-Band Rasters in</a><span style="font-style:normal;text-decoration:underline;color:#15C"> R</span></li>
+    </ul>
+    	<span style="font-style:normal">Fill in minute cards</span></td>
+    <td class="tg-0pky">2 hrs</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Day 3</td>
+    <td class="tg-0pky">Attend Discussion session</td>
+    <td class="tg-0pky">1 hr</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Day 4 Prep</td>
+    <td class="tg-0pky"><span style="font-style:normal">Watch episode 6-8</span>
+    <ul>
+    	<li> <a href="https://www.youtube.com/watch?v=oYBSSdH9mQ8&list=PL90vX4e9ORqeGADdAEDcM88TOgfijTzIo&index=6">Episode 6: Open and Plot Shapefiles in R</a><span style="font-style:normal;text-decoration:underline;color:#15C"> </span> </li>
+    	<li><a href="https://www.youtube.com/watch?v=Y-8kb-6ybhQ&list=PL90vX4e9ORqeGADdAEDcM88TOgfijTzIo&index=7">Episode 7: Explore and Plot by Shapefile Attribute</a><span style="font-style:normal;text-decoration:underline;color:#15C"></span> </li>
+    	<li> <a href="https://www.youtube.com/watch?v=S32k9O64Zbk&list=PL90vX4e9ORqeGADdAEDcM88TOgfijTzIo&index=8">Episode 8: Plot Multiple Shapefiles in</a><span style="font-style:normal;text-decoration:underline;color:#15C"> R</span> </li>
+    	</ul>
+    	<span style="font-style:normal">Fill in minute cards</span></td>
+    <td class="tg-0pky">2.5 hrs</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Day 4</td>
+    <td class="tg-0pky">Attend Discussion session</td>
+    <td class="tg-0pky">1 hr</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Day 5 Prep</td>
+    <td class="tg-0pky"><span style="font-style:normal">Watch episodes 9-11</span>
+    <ul>
+    	<li> <a href="https://www.youtube.com/watch?v=Ud31HvAhwss&list=PL90vX4e9ORqeGADdAEDcM88TOgfijTzIo&index=9">Episode 9: Handling Spatial Projections and CRS in R</a><span style="font-style:normal;text-decoration:underline;color:#15C"> </span> </li>
+    	<li><a href="https://www.youtube.com/watch?v=GSSOLXZEt0o&list=PL90vX4e9ORqeGADdAEDcM88TOgfijTzIo&index=10">Episode 10: Convert from CSV to Shapefile in R</a><span style="font-style:normal;text-decoration:underline;color:#15C"> </span> </li>
+    	<li><a href="https://youtu.be/7Ia2meKlvSw">Episode 11: Manipulate Raster Data in R</a><span style="font-style:normal;text-decoration:underline;color:#15C"></span> </li>
+    	</ul>
+    	<span style="font-style:normal">Fill in minute cards</span></td>
+    <td class="tg-0pky">3 hrs</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Day 5</td>
+    <td class="tg-0pky">Attend Discussion session</td>
+    <td class="tg-0pky">1 hr</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">Total</td>
+    <td class="tg-0pky"></td>
+    <td class="tg-0pky">16.5 hrs</td>
+  </tr>
+</tbody>
+</table>
 
 </div>
