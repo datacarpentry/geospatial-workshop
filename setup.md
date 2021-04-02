@@ -220,7 +220,7 @@ This option involves downloading an Docker image that contains an installation o
 
 Once up and running - you'll have full access to RStudio right from your browser:
 
-![](/fig/docker.png)
+![RStudio layout in browser showing similarity to desktop layout](/fig/docker.png)
 
 Please be aware that the `R` package `rasterVis` is not included in the `rocker/geospatial` Docker image. If your instructor teaches with this package then you will need to install this `R` package yourself. All other `R` packages will already be installed for you.
 
