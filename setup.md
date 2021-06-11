@@ -82,7 +82,7 @@ The installation of the geospatial libraries GDAL, GEOS, and PROJ.4 varies signi
 > For **Fedora**:
 >
 >~~~
->$ sudo dnf install gdal-devel proj-devel proj-epsg proj-nad geos-devel
+>$ sudo dnf install gdal-devel proj-devel geos-devel
 >~~~
 >{: .language-bash}
 >
