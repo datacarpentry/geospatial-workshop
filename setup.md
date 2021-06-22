@@ -61,6 +61,7 @@ The installation of the geospatial libraries GDAL, GEOS, and PROJ.4 varies signi
 >$ brew install proj
 >$ brew install geos
 >$ brew install gdal2
+>$ brew install udunits
 >~~~
 >{: .language-bash}
 >
