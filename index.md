@@ -45,7 +45,7 @@ Instructor. Instructors who have completed onboarding will be given priority sta
 > (`.zip`) file. To expand this file, double click the folder icon in your file navigator application (for Macs, this is the Finder 
 > application).
 > 
-> These data files represent teaching version of the data, with sufficient complexity to teach many aspects of  data analysis and 
+> These data files represent the teaching version of the data, with sufficient complexity to teach many aspects of  data analysis and 
 > management, but with many complexities removed to allow students to focus on the core ideas and skills being taught.  
 > 
 > | Dataset | File name | Description |
