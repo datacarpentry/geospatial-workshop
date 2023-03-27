@@ -26,7 +26,7 @@ For a full description of the data used in this workshop see the [data page](dat
 | -------- | ------------ | ------ | ------------- | ----------- |
 | [GDAL](http://www.gdal.org) | [Link](https://gdal.org/download.html) | [Link](https://gdal.org) | Linux, MacOS, Windows | Geospatial model for reading and writing a variety of formats |
 | [GEOS](https://trac.osgeo.org/geos) | [Link](https://trac.osgeo.org/geos) | [Link](http://geos.osgeo.org/doxygen/) | Linux, MacOS, Windows | Geometry models and operations |
-| [PROJ.4](http://proj4.org) | [Link](http://proj4.org/install.html)| [Link](http://proj4.org/index.html)| Linux, MacOS, Windows | Coordinate reference system transformations |
+| [PROJ](http://proj.org) | [Link](http://proj.org/install.html)| [Link](http://proj.org/index.html)| Linux, MacOS, Windows | Coordinate reference system transformations |
 | [R](https://www.r-project.org) | [Link](https://cloud.r-project.org) | [Link](https://cloud.r-project.org) | Linux, MacOS, Windows | Software environment for statistical and scientific computing |
 | [RStudio](https://www.rstudio.com) | [Link](https://www.rstudio.com/products/rstudio/download/#download) | | Linux, MacOS, Windows | GUI for R |
 | [UDUNITS](https://www.unidata.ucar.edu/software/udunits/) | [Link](https://www.unidata.ucar.edu/downloads/udunits/index.jsp) | [Link](https://www.unidata.ucar.edu/software/udunits/#documentation) | Linux, MacOS, Windows | Unit conversions |
@@ -34,9 +34,9 @@ For a full description of the data used in this workshop see the [data page](dat
 We provide quick instructions below for installing the various software needed for this workshop. At points, they assume familiarity with the command line and with installation in general. As there are different operating systems and many different versions of operating systems and environments, these may not work on your computer. If an installation doesn't work for you, please refer to the installation instructions for that software listed in the table above.
 
 
-### GDAL, GEOS, and PROJ.4
+### GDAL, GEOS, and PROJ
 
-The installation of the geospatial libraries GDAL, GEOS, and PROJ.4 varies significantly based on operating system. These are all dependencies for `sf`, the `R` package that we will be using for spatial data operations throughout this workshop.
+The installation of the geospatial libraries GDAL, GEOS, and PROJ varies significantly based on operating system. These are all dependencies for `sf`, the `R` package that we will be using for spatial data operations throughout this workshop.
 
 > ## Windows
 >
@@ -142,13 +142,13 @@ Participants who do not already have `R` installed should download and install i
 
 > ## Windows
 >
->To install `R`, Windows users should select "Download R for Windows" from RStudio and CRAN's [cloud download page](https://cloud.r-project.org), which will automatically detect a CRAN mirror for you to use. Select the `base` subdirectory after choosing the Windows download page. A `.exe` executable file containing the necessary components of base R can be downloaded by clicking on "Download R 3.x.x for Windows".
+>To install `R`, Windows users should select "Download R for Windows" from RStudio and CRAN's [cloud download page](https://cloud.r-project.org), which will automatically detect a CRAN mirror for you to use. Select the `base` subdirectory after choosing the Windows download page. A `.exe` executable file containing the necessary components of base R can be downloaded by clicking on "Download R 4.x.x for Windows".
 >
 {: .solution}
 
 > ## macOS
 >
->To install `R`, macOS users should select "Download R for (Mac) OS X" from RStudio and CRAN's [cloud download page](https://cloud.r-project.org), which will automatically detect a CRAN mirror for you to use. A `.pkg` file containing the necessary components of base R can be downloaded by clicking on the first available link (this will be the most recent), which will read `R-3.x.x.pkg`.
+>To install `R`, macOS users should select "Download R for (Mac) OS X" from RStudio and CRAN's [cloud download page](https://cloud.r-project.org), which will automatically detect a CRAN mirror for you to use. A `.pkg` file containing the necessary components of base R can be downloaded by clicking on the first available link (this will be the most recent), which will read `R-4.x.x.pkg`.
 >
 {: .solution}
 
@@ -167,11 +167,10 @@ The following `R` packages are used in the various geospatial lessons.
 
 * [`dplyr`](https://cran.r-project.org/package=dplyr)
 * [`ggplot2`](https://cran.r-project.org/package=ggplot2)
-* [`raster`](https://cran.r-project.org/package=raster)
-* [`rgdal`](https://cran.r-project.org/package=rgdal)
 * [`rasterVis`](https://cran.r-project.org/package=rasterVis)
 * [`remotes`](https://cran.r-project.org/package=remotes)
 * [`sf`](https://cran.r-project.org/package=sf)
+* ['terra'](https://cran.r-project.org/package=terra)
 
 To install these packages in RStudio, do the following:  
 1\. Open RStudio by double-clicking the RStudio application icon. You should see
@@ -183,7 +182,7 @@ something like this:
 2\. Type the following into the console and hit enter.
 
 ~~~
-install.packages(c("dplyr", "ggplot2", "raster", "rgdal", "rasterVis", "sf"))
+install.packages(c("dplyr", "ggplot2", "terra", "rasterVis", "sf"))
 ~~~
 {: .language-r}
 
