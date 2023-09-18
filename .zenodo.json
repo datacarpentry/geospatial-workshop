@@ -1,69 +1,33 @@
 {
-  "contributors": [
-    {
-      "type": "Editor",
-      "name": "Anne Fouilloux",
-      "orcid": "0000-0002-1784-2920"
-    },
-    {
-      "type": "Editor",
-      "name": "Arthur Endsley"
-    },
-    {
-      "type": "Editor",
-      "name": "Christopher Prener",
-      "orcid": "0000-0002-4310-9888"
-    },
-    {
-      "type": "Editor",
-      "name": "Jeff Hollister",
-      "orcid": "0000-0002-9254-9740"
-    },
-    {
-      "type": "Editor",
-      "name": "Joseph Stachelek",
-      "orcid": "0000-0002-5924-2464"
-    },
-    {
-      "type": "Editor",
-      "name": "Leah Wasser"
-    },
-    {
-      "type": "Editor",
-      "name": "Michael Sumner"
-    },
-    {
-      "type": "Editor",
-      "name": "Michele Tobias",
-      "orcid": "0000-0002-2954-8710"
-    },
-    {
-      "type": "Editor",
-      "name": "Stace Maples"
-    }
-  ],
+  "contributors": [],
   "creators": [
     {
-      "name": "Chris Prener",
-      "orcid": "0000-0002-4310-9888"
+      "name": "Christopher Prener"
     },
     {
-      "name": "Joseph Stachelek",
+      "name": "Jemma Stachelek",
       "orcid": "0000-0002-5924-2464"
     },
     {
-      "name": "Whalen"
+      "name": "Erin Alison Becker",
+      "orcid": "0000-0002-6832-0233"
     },
     {
-      "name": "Angela Li"
+      "name": "Adam Hughes"
     },
     {
-      "name": "Karl Benedict",
-      "orcid": "0000-0002-9109-2072"
+      "name": "bkmgit"
     },
     {
-      "name": "Maneesha Sane",
-      "orcid": "0000-0003-0726-5696"
+      "name": "Karen Word",
+      "orcid": "0000-0002-7294-7231"
+    },
+    {
+      "name": "Maneesha Sane"
+    },
+    {
+      "name": "froggleston",
+      "orcid": "0000-0002-5589-7754"
     }
   ],
   "license": {
