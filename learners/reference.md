@@ -1,8 +1,9 @@
 ---
-layout: reference
-root: .
+title: 'Glossary'
 ---
 
 ## Glossary
 
 FIXME
+
+
