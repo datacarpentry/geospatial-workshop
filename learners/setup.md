@@ -36,7 +36,7 @@ We provide quick instructions below for installing the various software needed f
 
 The installation of the geospatial libraries GDAL, GEOS, and PROJ.4 varies significantly based on operating system. These are all dependencies for `sf`, the `R` package that we will be using for spatial data operations throughout this workshop.
 
-:::::::::::::::  solution
+:::::::::::::::: spoiler
 
 ## Windows
 
@@ -44,7 +44,7 @@ To install the geospatial libraries, install the latest version [RTools](https:/
 
 :::::::::::::::::::::::::
 
-:::::::::::::::  solution
+:::::::::::::::: spoiler
 
 ## macOS - Install with Packages (Beginner)
 
@@ -54,7 +54,7 @@ After downloading the package in the link above, you will need to double-click t
 
 :::::::::::::::::::::::::
 
-:::::::::::::::  solution
+:::::::::::::::: spoiler
 
 ## macOS - Install with Homebrew (Advanced)
 
@@ -69,7 +69,7 @@ $ brew install gdal2
 
 :::::::::::::::::::::::::
 
-:::::::::::::::  solution
+:::::::::::::::: spoiler
 
 ## Linux
 
@@ -103,7 +103,7 @@ For **Debian**: The [rocker geospatial](https://github.com/rocker-org/geospatial
 
 Linux users will have to install UDUNITS separately. Like the geospatial libraries discussed above, this is a dependency for the `R` package `sf`. Due to conflicts, it does not install properly on Linux machines when installed as part of the `sf` installation process. It is therefore necessary to install it using the command line ahead of time.
 
-:::::::::::::::  solution
+:::::::::::::::: spoiler
 
 ## Linux
 
@@ -139,7 +139,7 @@ $ sudo apt-get install -y libudunits2-dev
 
 Participants who do not already have `R` installed should download and install it.
 
-:::::::::::::::  solution
+:::::::::::::::: spoiler
 
 ## Windows
 
@@ -147,7 +147,7 @@ To install `R`, Windows users should select "Download R for Windows" from RStudi
 
 :::::::::::::::::::::::::
 
-:::::::::::::::  solution
+:::::::::::::::: spoiler
 
 ## macOS
 
@@ -155,7 +155,7 @@ To install `R`, macOS users should select "Download R for (Mac) OS X" from RStud
 
 :::::::::::::::::::::::::
 
-:::::::::::::::  solution
+:::::::::::::::: spoiler
 
 ## Linux
 
@@ -226,7 +226,7 @@ Once up and running - you'll have full access to RStudio right from your browser
 
 Please be aware that the `R` package `rasterVis` is not included in the `rocker/geospatial` Docker image. If your instructor teaches with this package then you will need to install this `R` package yourself. All other `R` packages will already be installed for you.
 
-:::::::::::::::  solution
+:::::::::::::::: spoiler
 
 ## Downloading and Installing Docker Community Edition
 
@@ -238,7 +238,7 @@ Additional installation notes are available in Docker's documentation for each o
 
 :::::::::::::::::::::::::
 
-:::::::::::::::  solution
+:::::::::::::::: spoiler
 
 ## Using the `rocker/geospatial` Docker Image via the Command Line
 
@@ -296,7 +296,7 @@ If you are returning to a session after stopping Docker itself, make sure Docker
 
 :::::::::::::::::::::::::
 
-:::::::::::::::  solution
+:::::::::::::::: spoiler
 
 ## Using the `rocker/geospatial` Docker Image via Kitematic
 
@@ -330,7 +330,7 @@ You can restart your container later by clicking the `Restart` button.
 
 :::::::::::::::::::::::::
 
-:::::::::::::::  solution
+:::::::::::::::: spoiler
 
 ## Managing Docker Containers and Images
 

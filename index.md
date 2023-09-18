@@ -26,7 +26,6 @@ Similarly, learners who have prior experience with the `R` programming language 
 To get started, follow the directions in the [Setup](learners/setup.md) tab to
 get access to the required software and data for this workshop.
 
-
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::::::::  prereq
@@ -53,7 +52,7 @@ These data files represent the teaching version of the data, with sufficient com
 management, but with many complexities removed to allow students to focus on the core ideas and skills being taught.
 
 | Dataset                      | File name                                                                                  | Description                                                                                                                                                                                                                                             | 
-| ---------------------------- | ------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Site layout shapefiles       | NEON-DS-Site-Layout-Files.zip                                                              | A set of shapefiles for the NEON's Harvard Forest field site and US and (some) state boundary layers.                                                                                                                                                   | 
 | Meteorological data          | NEON-DS-Met-Time-Series.zip                                                                | Precipitation, temperature and other variables collected from a flux tower at the NEON Harvard Forest site                                                                                                                                              | 
 | Airborne remote sensing data | NEON-DS-Airborne-RemoteSensing.zip                                                         | LiDAR data collected by the NEON Airborne Observation Platform (AOP) and processed at NEON including a canopy height model, digital elevation model and digital surface model for NEON's Harvard Forest and San Joaquin Experimental Range field sites. | 
@@ -66,7 +65,7 @@ management, but with many complexities removed to allow students to focus on the
 # Workshop Overview
 
 | Lesson                       | Overview                                                                                   | 
-| ---------------------------- | ------------------------------------------------------------------------------------------ |
+| ---------------------------------------------------------- | ------------------------------------------------------------ |
 | [Introduction to Geospatial Concepts](https://www.datacarpentry.org/organization-geospatial/)                             | Understand data structures and common storage and transfer formats for spatial data.       | 
 | [Introduction to R for Geospatial Data](https://www.datacarpentry.org/r-intro-geospatial)                             | Import data into R, calculate summary statistics, and create publication-quality graphics. | 
 | [Introduction to Geospatial Raster and Vector Data with R](https://www.datacarpentry.org/r-raster-vector-geospatial)                             | Open, work with, and plot vector and raster-format spatial data in R.                      | 
