@@ -61,10 +61,9 @@ After downloading the package in the link above, you will need to double-click t
 Alternatively, participants who are comfortable with the command line can install the geospatial libraries individually using [homebrew](https://brew.sh):
 
 ```bash
-$ brew tap osgeo/osgeo4mac && brew tap --repair
 $ brew install proj
 $ brew install geos
-$ brew install gdal2
+$ brew install gdal
 ```
 
 :::::::::::::::::::::::::
