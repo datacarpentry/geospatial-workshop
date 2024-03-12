@@ -20,21 +20,21 @@ For a full description of the data used in this workshop see the [data page](ins
 ## Option A: Local Installation
 
 ### Software
-
 | Software | Install | Manual | Available for         | Description                                                   | 
+| -------- | ------- | ------ | --------------------- | ------------------------------------------------------------- |
+| [R](https://www.r-project.org)         | [Link](https://cloud.r-project.org)        | [Link](https://cloud.r-project.org)       | Linux, MacOS | Software environment for statistical and scientific computing | 
+| [RStudio](https://www.rstudio.com)         | [Link](https://www.rstudio.com/products/rstudio/download/#download)        |        | Linux, MacOS | GUI for R |
+ 
+
+||We're pretty sure none of the below gunk is necessary anymore.|
 | -------- | ------- | ------ | --------------------- | ------------------------------------------------------------- |
 | [GDAL](https://www.gdal.org)         | [Link](https://gdal.org/download.html)        | [Link](https://gdal.org)       | Linux, MacOS, Windows | Geospatial model for reading and writing a variety of formats | 
 | [GEOS](https://trac.osgeo.org/geos)         | [Link](https://trac.osgeo.org/geos)        | [Link](https://geos.osgeo.org/doxygen/)       | Linux, MacOS, Windows | Geometry models and operations                                | 
 | [PROJ.4](https://proj4.org)         | [Link](https://proj4.org/install.html)        | [Link](https://proj4.org/index.html)       | Linux, MacOS, Windows | Coordinate reference system transformations                   | 
-| [R](https://www.r-project.org)         | [Link](https://cloud.r-project.org)        | [Link](https://cloud.r-project.org)       | Linux, MacOS, Windows | Software environment for statistical and scientific computing | 
-| [RStudio](https://www.rstudio.com)         | [Link](https://www.rstudio.com/products/rstudio/download/#download)        |        | Linux, MacOS, Windows | GUI for R                                                     | 
 | [UDUNITS](https://www.unidata.ucar.edu/software/udunits/)         | [Link](https://www.unidata.ucar.edu/downloads/udunits/index.jsp)        | [Link](https://www.unidata.ucar.edu/software/udunits/#documentation)       | Linux, MacOS, Windows | Unit conversions                                              | 
 
 We provide quick instructions below for installing the various software needed for this workshop. At points, they assume familiarity with the command line and with installation in general. As there are different operating systems and many different versions of operating systems and environments, these may not work on your computer. If an installation doesn't work for you, please refer to the installation instructions for that software listed in the table above.
 
-### GDAL, GEOS, and PROJ.4
-
-The installation of the geospatial libraries GDAL, GEOS, and PROJ.4 varies significantly based on operating system. These are all dependencies for `sf`, the `R` package that we will be using for spatial data operations throughout this workshop.
 
 :::::::::::::::: spoiler
 
