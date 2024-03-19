@@ -19,11 +19,9 @@ For a full description of the data used in this workshop see the [data page](ins
 ### Software
 
 | Software                           | Install                                                             | Manual                              | Available for | Description                                                   |
-|----------|----------|----------|----------|---------------------------------|
+|------------|------------|------------|------------|-------------------------|
 | [R](https://www.r-project.org)     | [Link](https://cloud.r-project.org)                                 | [Link](https://cloud.r-project.org) | Linux, MacOS  | Software environment for statistical and scientific computing |
 | [RStudio](https://www.rstudio.com) | [Link](https://www.rstudio.com/products/rstudio/download/#download) |                                     | Linux, MacOS  | GUI for R                                                     |
-
-
 
 We provide quick instructions below for installing the various software needed for this workshop. At points, they assume familiarity with the command line and with installation in general. As there are different operating systems and many different versions of operating systems and environments, these may not work on your computer. If an installation doesn't work for you, please refer to the installation instructions for that software listed in the table above.
 
@@ -157,7 +155,7 @@ The following `R` packages are used in the various geospatial lessons.
 To install these packages in RStudio, do the following:\
 1. Open RStudio by double-clicking the RStudio application icon. You should see something like this:
 
-![](images/01-rstudio.png){alt="RStudio layout"}
+![](fig/01-rstudio.png){alt="RStudio layout"}
 
 2\. Type the following into the console and hit enter.
 
