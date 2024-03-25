@@ -146,10 +146,14 @@ The following `R` packages are used in the various geospatial lessons.
 -   [`dplyr`](https://cran.r-project.org/package=dplyr)
 -   [`ggplot2`](https://cran.r-project.org/package=ggplot2)
 -   [`raster`](https://cran.r-project.org/package=raster)
--   [`rgdal`](https://cran.r-project.org/package=rgdal)
 -   [`rasterVis`](https://cran.r-project.org/package=rasterVis)
+-   [`RColorBrewer`](https://CRAN.R-project.org/package=RColorBrewer)
 -   [`remotes`](https://cran.r-project.org/package=remotes)
+-   [`reshape`](https://CRAN.R-project.org/package=reshape)
+-   [`scales`](https://cran.r-project.org/package=scales)
 -   [`sf`](https://cran.r-project.org/package=sf)
+-   [`terra`](https://cran.r-project.org/package=terra)
+-   [`tidyr`](https://CRAN.R-project.org/package=tidyr)
 
 To install these packages in RStudio, do the following:\
 1. Open RStudio by double-clicking the RStudio application icon. You should see something like this:
@@ -159,7 +163,7 @@ To install these packages in RStudio, do the following:\
 2\. Type the following into the console and hit enter.
 
 ``` r
-install.packages(c("dplyr", "ggplot2", "raster", "rgdal", "rasterVis", "sf"))
+install.packages(c("dplyr", "ggplot2", "raster", "rasterVis", "RColorBrewer", "remotes", "reshape", "scales", "sf", "terra", "tidyr"))
 ```
 
 You should see a status message starting with:
