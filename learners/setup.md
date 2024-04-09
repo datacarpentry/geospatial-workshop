@@ -32,22 +32,18 @@ To install the geospatial libraries, install the latest version [RTools](https:/
 :::
 
 ::: spoiler
-## macOS - Install with Packages (Beginner)
-
-The simplest way to install these geospatial libraries is to install the latest version of [Kyng Chaos's pre-built package](https://www.kyngchaos.com/software/frameworks) for GDAL Complete. Be aware that several other libraries are also installed, including the UnixImageIO, SQLite3, and `NumPy`.
-
-After downloading the package in the link above, you will need to double-click the cardbord box icon to complete the installation. Depending on your security settings, you may get an error message about "unidentified developers". You can enable the installation by following [these instructions](https://kb.wisc.edu/page.php?id=25443) for installing programs from unidentified developers.
-:::
-
-::: spoiler
-## macOS - Install with Homebrew (Advanced)
+## macOS - Install with Homebrew
 
 Alternatively, participants who are comfortable with the command line can install the geospatial libraries individually using [homebrew](https://brew.sh):
 
 ```bash
-$ brew install proj
-$ brew install geos
+$ brew install pkg-config
 $ brew install gdal
+```
+Once GDAL is installed, you will be able to install the `sf` package from source in R. With the current version of `proj` on homebrew, installation requires additional configuration: 
+
+```bash
+install.packages("sf", type="source", configure.args. = "--with-proj-lib=$(brew --prefix)/lib/")
 ```
 :::
 
@@ -120,13 +116,13 @@ Participants who do not already have `R` installed should download and install i
 ::: spoiler
 ## Windows
 
-To install `R`, Windows users should select "Download R for Windows" from RStudio and CRAN's [cloud download page](https://cloud.r-project.org), which will automatically detect a CRAN mirror for you to use. Select the `base` subdirectory after choosing the Windows download page. A `.exe` executable file containing the necessary components of base R can be downloaded by clicking on "Download R 3.x.x for Windows".
+To install `R`, Windows users should select "Download R for Windows" from RStudio and CRAN's [cloud download page](https://cloud.r-project.org), which will automatically detect a CRAN mirror for you to use. Select the `base` subdirectory after choosing the Windows download page. A `.exe` executable file containing the necessary components of base R can be downloaded by clicking on "Download R 4.x.x for Windows".
 :::
 
 ::: spoiler
 ## macOS
 
-To install `R`, macOS users should select "Download R for (Mac) OS X" from RStudio and CRAN's [cloud download page](https://cloud.r-project.org), which will automatically detect a CRAN mirror for you to use. A `.pkg` file containing the necessary components of base R can be downloaded by clicking on the first available link (this will be the most recent), which will read `R-3.x.x.pkg`.
+To install `R`, macOS users should select "Download R for (Mac) OS X" from RStudio and CRAN's [cloud download page](https://cloud.r-project.org), which will automatically detect a CRAN mirror for you to use. A `.pkg` file containing the necessary components of base R can be downloaded by clicking on the first available link (this will be the most recent), which will read `R-4.x.x.pkg`.
 :::
 
 ::: spoiler
