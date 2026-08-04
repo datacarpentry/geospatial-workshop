@@ -32,22 +32,32 @@ To install the geospatial libraries, install the latest version [RTools](https:/
 :::
 
 ::: spoiler
-## macOS - Install with Packages (Beginner)
+## macOS - Prefer binary packages (recommended)
 
-The simplest way to install these geospatial libraries is to install the latest version of [Kyng Chaos's pre-built package](https://www.kyngchaos.com/software/frameworks) for GDAL Complete. Be aware that several other libraries are also installed, including the UnixImageIO, SQLite3, and `NumPy`.
+On macOS, install the `R` geospatial packages from CRAN as **binary** packages. The binaries already include the needed GDAL/PROJ/GEOS libraries, so most participants do not need to install system libraries separately:
 
-After downloading the package in the link above, you will need to double-click the cardbord box icon to complete the installation. Depending on your security settings, you may get an error message about "unidentified developers". You can enable the installation by following [these instructions](https://kb.wisc.edu/page.php?id=25443) for installing programs from unidentified developers.
+```r
+install.packages(c("sf", "terra"), type = "binary")
+```
+
+Use the source / Homebrew path below only if you need a source install or custom library versions.
 :::
 
 ::: spoiler
-## macOS - Install with Homebrew (Advanced)
+## macOS - Install with Homebrew (advanced / source builds)
 
-Alternatively, participants who are comfortable with the command line can install the geospatial libraries individually using [homebrew](https://brew.sh):
+Participants who are comfortable with the command line and need a **source** install can install GDAL with [Homebrew](https://brew.sh) (recent Homebrew `gdal` pulls in PROJ and GEOS):
 
 ```bash
-$ brew install proj
-$ brew install geos
+$ brew install pkg-config
 $ brew install gdal
+```
+
+Then install `sf` from source, pointing at the Homebrew library path:
+
+```r
+install.packages("sf", type = "source",
+                 configure.args = "--with-proj-lib=$(brew --prefix)/lib/")
 ```
 :::
 
@@ -120,13 +130,13 @@ Participants who do not already have `R` installed should download and install i
 ::: spoiler
 ## Windows
 
-To install `R`, Windows users should select "Download R for Windows" from RStudio and CRAN's [cloud download page](https://cloud.r-project.org), which will automatically detect a CRAN mirror for you to use. Select the `base` subdirectory after choosing the Windows download page. A `.exe` executable file containing the necessary components of base R can be downloaded by clicking on "Download R 3.x.x for Windows".
+To install `R`, Windows users should select "Download R for Windows" from RStudio and CRAN's [cloud download page](https://cloud.r-project.org), which will automatically detect a CRAN mirror for you to use. Select the `base` subdirectory after choosing the Windows download page. A `.exe` executable file containing the necessary components of base R can be downloaded by clicking on "Download R 4.x.x for Windows".
 :::
 
 ::: spoiler
 ## macOS
 
-To install `R`, macOS users should select "Download R for (Mac) OS X" from RStudio and CRAN's [cloud download page](https://cloud.r-project.org), which will automatically detect a CRAN mirror for you to use. A `.pkg` file containing the necessary components of base R can be downloaded by clicking on the first available link (this will be the most recent), which will read `R-3.x.x.pkg`.
+To install `R`, macOS users should select "Download R for (Mac) OS X" from RStudio and CRAN's [cloud download page](https://cloud.r-project.org), which will automatically detect a CRAN mirror for you to use. A `.pkg` file containing the necessary components of base R can be downloaded by clicking on the first available link (this will be the most recent), which will read `R-4.x.x.pkg`.
 :::
 
 ::: spoiler
@@ -272,7 +282,9 @@ If you are returning to a session after stopping Docker itself, make sure Docker
 
 #### Download and Install Kitematic
 
-[Kitematic](https://github.com/docker/kitematic) is the GUI, currently in beta, that Docker has built for accessing images and containers on Windows, macOS, and Ubuntu. You can download the appropriate installer files from Kitematic's [GitHub release page](https://github.com/docker/kitematic/releases/tag/v0.17.3). You need to have already installed Docker Community Edition (see instructions above) before installing Kitematic!
+> **Note:** The [Kitematic](https://github.com/docker/kitematic) project is **archived** and no longer maintained. Prefer the command-line Docker instructions above. The steps below remain only for historical reference if you already have Kitematic installed.
+
+Kitematic was a GUI for Docker images and containers on Windows, macOS, and Ubuntu. Older installers may still be available from its [GitHub release page](https://github.com/docker/kitematic/releases/tag/v0.17.3). You need Docker Community Edition installed before using Kitematic.
 
 #### Opening a Container with Kitematic
 
