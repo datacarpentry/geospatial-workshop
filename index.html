@@ -373,7 +373,7 @@ instructions for that software listed in the table above.</p>
   Windows
   </h3>
 </button>
-<div id="collapseSpoiler1" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler1" aria-labelledby="headingSpoiler1">
+<div id="collapseSpoiler1" class="accordion-collapse collapse" aria-labelledby="headingSpoiler1" data-bs-parent="#accordionSpoiler1">
 <div class="accordion-body">
 <p>To install the geospatial libraries, install the latest version <a href="https://cran.r-project.org/bin/windows/Rtools/" class="external-link">RTools</a></p>
 </div>
@@ -385,22 +385,23 @@ instructions for that software listed in the table above.</p>
 <button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler2" aria-expanded="false" aria-controls="collapseSpoiler2">
   <h3 class="accordion-header" id="headingSpoiler2">
   <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>
-  macOS - Install with Packages (Beginner)
+  macOS - Prefer binary packages (recommended)
   </h3>
 </button>
-<div id="collapseSpoiler2" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler2" aria-labelledby="headingSpoiler2">
+<div id="collapseSpoiler2" class="accordion-collapse collapse" aria-labelledby="headingSpoiler2" data-bs-parent="#accordionSpoiler2">
 <div class="accordion-body">
-<p>The simplest way to install these geospatial libraries is to install
-the latest version of <a href="https://www.kyngchaos.com/software/frameworks" class="external-link">Kyng Chaos’s
-pre-built package</a> for GDAL Complete. Be aware that several other
-libraries are also installed, including the UnixImageIO, SQLite3, and
-<code>NumPy</code>.</p>
-<p>After downloading the package in the link above, you will need to
-double-click the cardbord box icon to complete the installation.
-Depending on your security settings, you may get an error message about
-“unidentified developers”. You can enable the installation by following
-<a href="https://kb.wisc.edu/page.php?id=25443" class="external-link">these instructions</a>
-for installing programs from unidentified developers.</p>
+<p>On macOS, install the <code>R</code> geospatial packages from CRAN as
+<strong>binary</strong> packages. The binaries already include the
+needed GDAL/PROJ/GEOS libraries, so most participants do not need to
+install system libraries separately:</p>
+<div class="codewrapper sourceCode" id="cb1">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">install.packages</span><span class="op">(</span><span class="fu">c</span><span class="op">(</span><span class="st">"sf"</span>, <span class="st">"terra"</span><span class="op">)</span>, type <span class="op">=</span> <span class="st">"binary"</span><span class="op">)</span></span></code></pre>
+</div>
+<p>Use the source / Homebrew path below only if you need a source
+install or custom library versions.</p>
 </div>
 </div>
 </div>
@@ -410,19 +411,28 @@ for installing programs from unidentified developers.</p>
 <button class="accordion-button spoiler-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSpoiler3" aria-expanded="false" aria-controls="collapseSpoiler3">
   <h3 class="accordion-header" id="headingSpoiler3">
   <div class="note-square"><i aria-hidden="true" class="callout-icon" data-feather="eye"></i></div>
-  macOS - Install with Homebrew (Advanced)
+  macOS - Install with Homebrew (advanced / source builds)
   </h3>
 </button>
-<div id="collapseSpoiler3" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler3" aria-labelledby="headingSpoiler3">
+<div id="collapseSpoiler3" class="accordion-collapse collapse" aria-labelledby="headingSpoiler3" data-bs-parent="#accordionSpoiler3">
 <div class="accordion-body">
-<p>Alternatively, participants who are comfortable with the command line
-can install the geospatial libraries individually using <a href="https://brew.sh" class="external-link">homebrew</a>:</p>
-<div class="codewrapper sourceCode" id="cb1">
+<p>Participants who are comfortable with the command line and need a
+<strong>source</strong> install can install GDAL with <a href="https://brew.sh" class="external-link">Homebrew</a> (recent Homebrew <code>gdal</code>
+pulls in PROJ and GEOS):</p>
+<div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" tabindex="-1" aria-label="code-block-1-1"></a><span class="ex">$</span> brew install proj</span>
-<span id="cb1-2"><a href="#cb1-2" tabindex="-1" aria-label="code-block-1-2"></a><span class="ex">$</span> brew install geos</span>
-<span id="cb1-3"><a href="#cb1-3" tabindex="-1" aria-label="code-block-1-3"></a><span class="ex">$</span> brew install gdal</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1" aria-label="code-block-2-1"></a><span class="ex">$</span> brew install pkg-config</span>
+<span id="cb2-2"><a href="#cb2-2" tabindex="-1" aria-label="code-block-2-2"></a><span class="ex">$</span> brew install gdal</span></code></pre>
+</div>
+<p>Then install <code>sf</code> from source, pointing at the Homebrew
+library path:</p>
+<div class="codewrapper sourceCode" id="cb3">
+<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">install.packages</span><span class="op">(</span><span class="st">"sf"</span>, type <span class="op">=</span> <span class="st">"source"</span>,</span>
+<span>                 configure.args <span class="op">=</span> <span class="st">"--with-proj-lib=$(brew --prefix)/lib/"</span><span class="op">)</span></span></code></pre>
 </div>
 </div>
 </div>
@@ -436,31 +446,31 @@ can install the geospatial libraries individually using <a href="https://brew.sh
   Linux
   </h3>
 </button>
-<div id="collapseSpoiler4" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler4" aria-labelledby="headingSpoiler4">
+<div id="collapseSpoiler4" class="accordion-collapse collapse" aria-labelledby="headingSpoiler4" data-bs-parent="#accordionSpoiler4">
 <div class="accordion-body">
 <p>Steps for installing the geospatial libraries will vary based on
 which form of Linux you are using. These instructions are adapted from
 the <a href="https://github.com/r-spatial/sf" class="external-link"><code>sf</code> package’s
 <code>README</code></a>.</p>
 <p>For <strong>Ubuntu</strong>:</p>
-<div class="codewrapper sourceCode" id="cb2">
-<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" tabindex="-1" aria-label="code-block-2-1"></a><span class="ex">$</span> sudo add-apt-repository ppa:ubuntugis</span>
-<span id="cb2-2"><a href="#cb2-2" tabindex="-1" aria-label="code-block-2-2"></a><span class="ex">$</span> sudo apt-get update</span>
-<span id="cb2-3"><a href="#cb2-3" tabindex="-1" aria-label="code-block-2-3"></a><span class="ex">$</span> sudo apt-get install libgdal-dev libgeos-dev libproj-dev</span></code></pre>
-</div>
-<p>For <strong>Fedora</strong>:</p>
-<div class="codewrapper sourceCode" id="cb3">
-<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" tabindex="-1" aria-label="code-block-3-1"></a><span class="ex">$</span> sudo dnf install gdal-devel proj-devel geos-devel</span></code></pre>
-</div>
-<p>For <strong>Arch</strong>:</p>
 <div class="codewrapper sourceCode" id="cb4">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" tabindex="-1" aria-label="code-block-4-1"></a><span class="ex">$</span> pacman <span class="at">-S</span> gdal proj geos</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" tabindex="-1" aria-label="code-block-4-1"></a><span class="ex">$</span> sudo add-apt-repository ppa:ubuntugis</span>
+<span id="cb4-2"><a href="#cb4-2" tabindex="-1" aria-label="code-block-4-2"></a><span class="ex">$</span> sudo apt-get update</span>
+<span id="cb4-3"><a href="#cb4-3" tabindex="-1" aria-label="code-block-4-3"></a><span class="ex">$</span> sudo apt-get install libgdal-dev libgeos-dev libproj-dev</span></code></pre>
+</div>
+<p>For <strong>Fedora</strong>:</p>
+<div class="codewrapper sourceCode" id="cb5">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" tabindex="-1" aria-label="code-block-5-1"></a><span class="ex">$</span> sudo dnf install gdal-devel proj-devel geos-devel</span></code></pre>
+</div>
+<p>For <strong>Arch</strong>:</p>
+<div class="codewrapper sourceCode" id="cb6">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" tabindex="-1" aria-label="code-block-6-1"></a><span class="ex">$</span> pacman <span class="at">-S</span> gdal proj geos</span></code></pre>
 </div>
 <p>For <strong>Debian</strong>: The <a href="https://github.com/rocker-org/geospatial" class="external-link">rocker geospatial</a>
 Dockerfiles may be helpful. Ubuntu Dockerfiles are found <a href="https://github.com/r-spatial/sf/tree/master/inst/docker" class="external-link">here</a>.
@@ -487,34 +497,34 @@ install it using the command line ahead of time.</p>
   Linux
   </h3>
 </button>
-<div id="collapseSpoiler5" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler5" aria-labelledby="headingSpoiler5">
+<div id="collapseSpoiler5" class="accordion-collapse collapse" aria-labelledby="headingSpoiler5" data-bs-parent="#accordionSpoiler5">
 <div class="accordion-body">
 <p>Steps for installing the geospatial will vary based on which form of
 Linux you are using. These instructions are adapted from the <a href="https://github.com/r-spatial/sf" class="external-link"><code>sf</code> package’s
 <code>README</code></a>.</p>
 <p>For <strong>Ubuntu</strong>:</p>
-<div class="codewrapper sourceCode" id="cb5">
-<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" tabindex="-1" aria-label="code-block-5-1"></a><span class="ex">$</span> sudo apt-get install libudunits2-dev</span></code></pre>
-</div>
-<p>For <strong>Fedora</strong>:</p>
-<div class="codewrapper sourceCode" id="cb6">
-<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" tabindex="-1" aria-label="code-block-6-1"></a><span class="ex">$</span> sudo dnf install udunits2-devel</span></code></pre>
-</div>
-<p>For <strong>Arch</strong>:</p>
 <div class="codewrapper sourceCode" id="cb7">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" tabindex="-1" aria-label="code-block-7-1"></a><span class="ex">$</span> pacaur/yaourt/whatever <span class="at">-S</span> udunits</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" tabindex="-1" aria-label="code-block-7-1"></a><span class="ex">$</span> sudo apt-get install libudunits2-dev</span></code></pre>
 </div>
-<p>For <strong>Debian</strong>:</p>
+<p>For <strong>Fedora</strong>:</p>
 <div class="codewrapper sourceCode" id="cb8">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" tabindex="-1" aria-label="code-block-8-1"></a><span class="ex">$</span> sudo apt-get install <span class="at">-y</span> libudunits2-dev</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" tabindex="-1" aria-label="code-block-8-1"></a><span class="ex">$</span> sudo dnf install udunits2-devel</span></code></pre>
+</div>
+<p>For <strong>Arch</strong>:</p>
+<div class="codewrapper sourceCode" id="cb9">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" tabindex="-1" aria-label="code-block-9-1"></a><span class="ex">$</span> pacaur/yaourt/whatever <span class="at">-S</span> udunits</span></code></pre>
+</div>
+<p>For <strong>Debian</strong>:</p>
+<div class="codewrapper sourceCode" id="cb10">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" tabindex="-1" aria-label="code-block-10-1"></a><span class="ex">$</span> sudo apt-get install <span class="at">-y</span> libudunits2-dev</span></code></pre>
 </div>
 </div>
 </div>
@@ -533,14 +543,14 @@ download and install it.</p>
   Windows
   </h3>
 </button>
-<div id="collapseSpoiler6" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler6" aria-labelledby="headingSpoiler6">
+<div id="collapseSpoiler6" class="accordion-collapse collapse" aria-labelledby="headingSpoiler6" data-bs-parent="#accordionSpoiler6">
 <div class="accordion-body">
 <p>To install <code>R</code>, Windows users should select “Download R
 for Windows” from RStudio and CRAN’s <a href="https://cloud.r-project.org" class="external-link">cloud download page</a>, which will
 automatically detect a CRAN mirror for you to use. Select the
 <code>base</code> subdirectory after choosing the Windows download page.
 A <code>.exe</code> executable file containing the necessary components
-of base R can be downloaded by clicking on “Download R 3.x.x for
+of base R can be downloaded by clicking on “Download R 4.x.x for
 Windows”.</p>
 </div>
 </div>
@@ -554,14 +564,14 @@ Windows”.</p>
   macOS
   </h3>
 </button>
-<div id="collapseSpoiler7" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler7" aria-labelledby="headingSpoiler7">
+<div id="collapseSpoiler7" class="accordion-collapse collapse" aria-labelledby="headingSpoiler7" data-bs-parent="#accordionSpoiler7">
 <div class="accordion-body">
 <p>To install <code>R</code>, macOS users should select “Download R for
 (Mac) OS X” from RStudio and CRAN’s <a href="https://cloud.r-project.org" class="external-link">cloud download page</a>, which will
 automatically detect a CRAN mirror for you to use. A <code>.pkg</code>
 file containing the necessary components of base R can be downloaded by
 clicking on the first available link (this will be the most recent),
-which will read <code>R-3.x.x.pkg</code>.</p>
+which will read <code>R-4.x.x.pkg</code>.</p>
 </div>
 </div>
 </div>
@@ -574,7 +584,7 @@ which will read <code>R-3.x.x.pkg</code>.</p>
   Linux
   </h3>
 </button>
-<div id="collapseSpoiler8" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler8" aria-labelledby="headingSpoiler8">
+<div id="collapseSpoiler8" class="accordion-collapse collapse" aria-labelledby="headingSpoiler8" data-bs-parent="#accordionSpoiler8">
 <div class="accordion-body">
 <p>To install <code>R</code>, Linux users should select “Download R for
 Linux” from RStudio and CRAN’s <a href="https://cloud.r-project.org" class="external-link">cloud download page</a>, which will
@@ -614,7 +624,7 @@ geospatial lessons.</p>
 1. Open RStudio by double-clicking the RStudio application icon. You
 should see something like this:</p>
 <figure><img src="fig/01-rstudio.png" alt="RStudio layout" class="figure mx-auto d-block"></figure><p>2. Type the following into the console and hit enter.</p>
-<div class="codewrapper sourceCode" id="cb9">
+<div class="codewrapper sourceCode" id="cb11">
 <h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
 <pre class="downlit sourceCode r">
@@ -681,7 +691,7 @@ installed for you.</p>
   Downloading and Installing Docker Community Edition
   </h3>
 </button>
-<div id="collapseSpoiler9" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler9" aria-labelledby="headingSpoiler9">
+<div id="collapseSpoiler9" class="accordion-collapse collapse" aria-labelledby="headingSpoiler9" data-bs-parent="#accordionSpoiler9">
 <div class="accordion-body">
 <p>To get started with Docker, download the <a href="https://www.docker.com/community-edition" class="external-link">Docker Community
 Edition</a> from <a href="https://store.docker.com/search?type=edition&amp;offering=community" class="external-link">Docker’s
@@ -710,7 +720,7 @@ and <a href="https://docs.docker.com/install/linux/docker-ce/ubuntu/" class="ext
   Using the rocker/geospatial Docker Image via the Command Line
   </h3>
 </button>
-<div id="collapseSpoiler10" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler10" aria-labelledby="headingSpoiler10">
+<div id="collapseSpoiler10" class="accordion-collapse collapse" aria-labelledby="headingSpoiler10" data-bs-parent="#accordionSpoiler10">
 <div class="accordion-body">
 <div class="section level4">
 <h4 id="download-and-set-up">Download and Set-up<a class="anchor" aria-label="anchor" href="#download-and-set-up"></a></h4>
@@ -725,10 +735,10 @@ instructions above) before proceeding. Once you have Docker downloaded
 and installed, make sure Docker is running and then enter the following
 command into the terminal to download the <code>rocker/geospatial</code>
 image:</p>
-<div class="codewrapper sourceCode" id="cb12">
+<div class="codewrapper sourceCode" id="cb14">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" tabindex="-1" aria-label="code-block-12-1"></a><span class="ex">$</span> docker pull rocker/geospatial</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" tabindex="-1" aria-label="code-block-14-1"></a><span class="ex">$</span> docker pull rocker/geospatial</span></code></pre>
 </div>
 <p>Once the pull command is executed, the image needs to be run to
 become accessible as a container. In the following example, the image is
@@ -742,10 +752,10 @@ your computer to become accessible inside your RStudio Server instance.
 The following <code>docker run</code> command exposes Jane’s
 <code>GitHub</code> directory to RStudio Server. Enter the file path
 where your workshop resources and data are stored:</p>
-<div class="codewrapper sourceCode" id="cb13">
+<div class="codewrapper sourceCode" id="cb15">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" tabindex="-1" aria-label="code-block-13-1"></a><span class="ex">$</span> docker run <span class="at">-d</span> <span class="at">-P</span> <span class="at">--name</span> gis <span class="at">-v</span> /Users/jane/GitHub:/home/rstudio/GitHub <span class="at">-e</span> PASSWORD=mypass rocker/geospatial</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" tabindex="-1" aria-label="code-block-15-1"></a><span class="ex">$</span> docker run <span class="at">-d</span> <span class="at">-P</span> <span class="at">--name</span> gis <span class="at">-v</span> /Users/jane/GitHub:/home/rstudio/GitHub <span class="at">-e</span> PASSWORD=mypass rocker/geospatial</span></code></pre>
 </div>
 <p>When she opens her RStudio instance below, she will see a
 <code>GitHub</code> folder in her file tab in the lower righthand corner
@@ -755,10 +765,10 @@ are available on <a href="https://github.com/rocker-org/rocker/wiki/Sharing-file
 Wiki</a>.</p>
 <p>The last step before launching your container in a browser is to
 identify the port that your Docker container is running in:</p>
-<div class="codewrapper sourceCode" id="cb14">
+<div class="codewrapper sourceCode" id="cb16">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" tabindex="-1" aria-label="code-block-14-1"></a><span class="ex">$</span> docker port gis</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" tabindex="-1" aria-label="code-block-16-1"></a><span class="ex">$</span> docker port gis</span></code></pre>
 </div>
 <p>An output, for example, of <code>8787/tcp -&gt; 0.0.0.0:32768</code>
 would indicate that you should point your browser to
@@ -775,10 +785,10 @@ and Docker</strong>. Once you have ensured all of your files are
 available (they should be saved at the file path designated in
 <code>docker run</code> above), you can stop your Docker container in
 the terminal:</p>
-<div class="codewrapper sourceCode" id="cb15">
+<div class="codewrapper sourceCode" id="cb17">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" tabindex="-1" aria-label="code-block-15-1"></a><span class="ex">$</span> docker stop gis</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" tabindex="-1" aria-label="code-block-17-1"></a><span class="ex">$</span> docker stop gis</span></code></pre>
 </div>
 </div>
 <div class="section level4">
@@ -786,17 +796,17 @@ the terminal:</p>
 <p>Once a container has been named and created, you cannot create a
 container with the same name again using <code>docker run</code>.
 Instead, you can restart it:</p>
-<div class="codewrapper sourceCode" id="cb16">
+<div class="codewrapper sourceCode" id="cb18">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" tabindex="-1" aria-label="code-block-16-1"></a><span class="ex">$</span> docker start gis</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" tabindex="-1" aria-label="code-block-18-1"></a><span class="ex">$</span> docker start gis</span></code></pre>
 </div>
 <p>If you cannot remember the name of the container you created, you can
 use the following command to print a list of all named containers:</p>
-<div class="codewrapper sourceCode" id="cb17">
+<div class="codewrapper sourceCode" id="cb19">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb17-1"><a href="#cb17-1" tabindex="-1" aria-label="code-block-17-1"></a><span class="ex">$</span> docker ps <span class="at">-a</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb19-1"><a href="#cb19-1" tabindex="-1" aria-label="code-block-19-1"></a><span class="ex">$</span> docker ps <span class="at">-a</span></span></code></pre>
 </div>
 <p>If you are returning to a session after stopping Docker itself, make
 sure Docker is running again before re-starting your container!</p>
@@ -813,16 +823,20 @@ sure Docker is running again before re-starting your container!</p>
   Using the rocker/geospatial Docker Image via Kitematic
   </h3>
 </button>
-<div id="collapseSpoiler11" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler11" aria-labelledby="headingSpoiler11">
+<div id="collapseSpoiler11" class="accordion-collapse collapse" aria-labelledby="headingSpoiler11" data-bs-parent="#accordionSpoiler11">
 <div class="accordion-body">
 <div class="section level4">
 <h4 id="download-and-install-kitematic">Download and Install Kitematic<a class="anchor" aria-label="anchor" href="#download-and-install-kitematic"></a></h4>
-<p><a href="https://github.com/docker/kitematic" class="external-link">Kitematic</a> is the
-GUI, currently in beta, that Docker has built for accessing images and
-containers on Windows, macOS, and Ubuntu. You can download the
-appropriate installer files from Kitematic’s <a href="https://github.com/docker/kitematic/releases/tag/v0.17.3" class="external-link">GitHub
-release page</a>. You need to have already installed Docker Community
-Edition (see instructions above) before installing Kitematic!</p>
+<blockquote>
+<p><strong>Note:</strong> The <a href="https://github.com/docker/kitematic" class="external-link">Kitematic</a> project is
+<strong>archived</strong> and no longer maintained. Prefer the
+command-line Docker instructions above. The steps below remain only for
+historical reference if you already have Kitematic installed.</p>
+</blockquote>
+<p>Kitematic was a GUI for Docker images and containers on Windows,
+macOS, and Ubuntu. Older installers may still be available from its <a href="https://github.com/docker/kitematic/releases/tag/v0.17.3" class="external-link">GitHub
+release page</a>. You need Docker Community Edition installed before
+using Kitematic.</p>
 </div>
 <div class="section level4">
 <h4 id="opening-a-container-with-kitematic">Opening a Container with Kitematic<a class="anchor" aria-label="anchor" href="#opening-a-container-with-kitematic"></a></h4>
@@ -869,35 +883,35 @@ clicking on the <code>Stop</code> icon in Kitematic’s toolbar.</p>
   Managing Docker Containers and Images
   </h3>
 </button>
-<div id="collapseSpoiler12" class="accordion-collapse collapse" data-bs-parent="#accordionSpoiler12" aria-labelledby="headingSpoiler12">
+<div id="collapseSpoiler12" class="accordion-collapse collapse" aria-labelledby="headingSpoiler12" data-bs-parent="#accordionSpoiler12">
 <div class="accordion-body">
 <p>To obtain a list of all of your current Docker containers:</p>
-<div class="codewrapper sourceCode" id="cb18">
+<div class="codewrapper sourceCode" id="cb20">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb18-1"><a href="#cb18-1" tabindex="-1" aria-label="code-block-18-1"></a><span class="ex">$</span> docker ps <span class="at">-a</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb20-1"><a href="#cb20-1" tabindex="-1" aria-label="code-block-20-1"></a><span class="ex">$</span> docker ps <span class="at">-a</span></span></code></pre>
 </div>
 <p>To list all of the currently downloaded Docker images:</p>
-<div class="codewrapper sourceCode" id="cb19">
+<div class="codewrapper sourceCode" id="cb21">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb19-1"><a href="#cb19-1" tabindex="-1" aria-label="code-block-19-1"></a><span class="ex">$</span> docker images <span class="at">-a</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1" tabindex="-1" aria-label="code-block-21-1"></a><span class="ex">$</span> docker images <span class="at">-a</span></span></code></pre>
 </div>
 <p>These images can take up system resources, and if you’d like to
 remove them, you can use the <code>docker prune</code> command. To
 remove any Docker resources not affiliated with a container listed under
 <code>docker ps -a</code>:</p>
-<div class="codewrapper sourceCode" id="cb20">
+<div class="codewrapper sourceCode" id="cb22">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb20-1"><a href="#cb20-1" tabindex="-1" aria-label="code-block-20-1"></a><span class="ex">$</span> docker system prune</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb22-1"><a href="#cb22-1" tabindex="-1" aria-label="code-block-22-1"></a><span class="ex">$</span> docker system prune</span></code></pre>
 </div>
 <p>To remove <strong>all</strong> Docker resources, including currently
 named containers:</p>
-<div class="codewrapper sourceCode" id="cb21">
+<div class="codewrapper sourceCode" id="cb23">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb21-1"><a href="#cb21-1" tabindex="-1" aria-label="code-block-21-1"></a><span class="ex">$</span> docker system prune <span class="at">-a</span></span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb23-1"><a href="#cb23-1" tabindex="-1" aria-label="code-block-23-1"></a><span class="ex">$</span> docker system prune <span class="at">-a</span></span></code></pre>
 </div>
 </div>
 </div>
