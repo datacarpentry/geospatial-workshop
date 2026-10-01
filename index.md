@@ -2,6 +2,14 @@
 site: sandpaper::sandpaper_site
 ---
 
+:::::::::::::::::::::::::::::::::::::::::: callout
+
+### Lesson Retired
+**This curriculum is retired.** The lesson pages remain online but the source repository is archived and no new contributions can be made.
+[Contact The Carpentries](mailto:team@carpentries.org) with your questions.
+
+::::::::::::::::::::::::::::::::::::::::::::::::::
+
 Data Carpentry's aim is to teach researchers basic concepts, skills, and tools for working with data so that they can get more done in less time, and with less pain.
 
 Interested in teaching these materials? We have an [onboarding video](https://www.youtube.com/watch?v=Qtnb_eeHt7E) available to prepare Instructors to teach these lessons. After
