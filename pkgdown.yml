@@ -1,4 +1,4 @@
-pandoc: 3.8.3
+pandoc: '3.11'
 pkgdown: 2.2.1
 pkgdown_sha: ~
 articles: {}
