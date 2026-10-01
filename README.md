@@ -3,20 +3,6 @@
 
 # Geospatial Workshop
 
-Overview of the Geospatial workshop.
-
-## Code of Conduct
-
-All participants should agree to abide by the [Data Carpentry Code of Conduct](https://www.datacarpentry.org/code-of-conduct/).
-
-## Authors
-
-The Geospatial workshop overview is authored and maintained by the Carpentry community.
-
-## Citation
-
-Please cite as:
-
-Geospatial Workshop. June 2018.
-
+**This curriculum is retired.** The lesson pages remain online but the source repository is archived and no new contributions can be made.
+[Contact The Carpentries](mailto:team@carpentries.org) with your questions.
 
